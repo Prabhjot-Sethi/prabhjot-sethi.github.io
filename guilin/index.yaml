@@ -1,0 +1,1160 @@
+apiVersion: v1
+entries:
+  a1policymanagement:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2021-06-15T11:21:20.829206266Z"
+    description: A Helm chart for A1 Policy Management Service
+    digest: 11389370dd136dc6616367e39ebeb06164591e2fa0f24249f352375cf35aef09
+    name: a1policymanagement
+    urls:
+    - a1policymanagement-7.0.1.tgz
+    version: 7.0.1
+  aaf:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.866741373Z"
+    description: ONAP Application Authorization Framework
+    digest: f4124bf71d08061e2677209d46dcf74963d14b6335dccfe4b0f3c53e8383d73c
+    name: aaf
+    urls:
+    - aaf-7.0.1.tgz
+    version: 7.0.1
+  aaf-cass:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.868283875Z"
+    description: ONAP AAF cassandra
+    digest: 3bd4d13a22b1dcefb8af0e66cb315aac7d14a0fb1f34009d5221e768690f89f2
+    name: aaf-cass
+    urls:
+    - aaf-cass-7.0.1.tgz
+    version: 7.0.1
+  aaf-cm:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.871259671Z"
+    description: ONAP AAF Certificate Manager
+    digest: 89845fb5285bc9449ba1ade2a559a57b6b26c89f86b5df43438dc743ce1f84c4
+    name: aaf-cm
+    urls:
+    - aaf-cm-7.0.1.tgz
+    version: 7.0.1
+  aaf-fs:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.874293126Z"
+    description: ONAP AAF File Server
+    digest: e048824d55f1d7c12a6d3739088e5d16dc810bbde8bd5e066db2d24ee15a39ea
+    name: aaf-fs
+    urls:
+    - aaf-fs-7.0.1.tgz
+    version: 7.0.1
+  aaf-gui:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.877767024Z"
+    description: ONAP AAF GUI
+    digest: 3a87c0ce1393125c14e396a39afce0c351c7e52963b08e4b2f0854ecfe5703c3
+    name: aaf-gui
+    urls:
+    - aaf-gui-7.0.1.tgz
+    version: 7.0.1
+  aaf-hello:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.882525357Z"
+    description: ONAP AAF Hello
+    digest: 83e5c61d08f03ec2a343f209b082fd569b9944bfbd8a3205eea62ee2c76361a4
+    name: aaf-hello
+    urls:
+    - aaf-hello-7.0.1.tgz
+    version: 7.0.1
+  aaf-locate:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.887852535Z"
+    description: ONAP AAF Locate
+    digest: e0417b57137e42e91461b152372b9925a84f42dd333d5385653bb1226b0f86c6
+    name: aaf-locate
+    urls:
+    - aaf-locate-7.0.1.tgz
+    version: 7.0.1
+  aaf-oauth:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.892527122Z"
+    description: ONAP AAF OAuth
+    digest: ac54a1b5a53f1aa12aeaed325418c4d36ffef3649f95160954b646a4a8291e50
+    name: aaf-oauth
+    urls:
+    - aaf-oauth-7.0.1.tgz
+    version: 7.0.1
+  aaf-service:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.896825901Z"
+    description: ONAP AAF Service
+    digest: 7b387d480cc7395a209044dd2519a95e122c3a188dccda6e94acf4a0a4721bf1
+    name: aaf-service
+    urls:
+    - aaf-service-7.0.1.tgz
+    version: 7.0.1
+  aaf-sms:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.906348083Z"
+    description: ONAP Secret Management Service
+    digest: ba269a0529fa11255675fbbf5f2fa7ce46a8652fac0686566f11909f3752f10e
+    name: aaf-sms
+    urls:
+    - aaf-sms-7.0.1.tgz
+    version: 7.0.1
+  aaf-sshsm:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.908855359Z"
+    description: ONAP Hardware Security Components
+    digest: 50db4f7d62c47384e1771a370635fb65bb0856f7e05dd661dbe8dc4dc3b23dd2
+    name: aaf-sshsm
+    urls:
+    - aaf-sshsm-7.0.1.tgz
+    version: 7.0.1
+  aaf-templates:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.91079012Z"
+    description: ONAP Application Authorization Framework Templates
+    digest: 01d8855f9181c1751dad046bc3a4fba7bca14ea82e0d45983645173152f8b9f1
+    name: aaf-templates
+    urls:
+    - aaf-templates-7.0.1.tgz
+    version: 7.0.1
+  aai:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.933364565Z"
+    description: ONAP Active and Available Inventory
+    digest: f3c84a14df22b2a273367ad61857bbaa2b49ab8b7bd879444bfaf536f76c03e4
+    name: aai
+    urls:
+    - aai-7.0.0.tgz
+    version: 7.0.0
+  appc:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.943991226Z"
+    description: Application Controller
+    digest: 2596fe2bcc6fd5c17a03ccaa045d2c087ee2f96f571c6d4cbb10def82f7bc011
+    name: appc
+    urls:
+    - appc-7.0.1.tgz
+    version: 7.0.1
+  cassandra:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.950627743Z"
+    description: ONAP cassandra
+    digest: 17150617669c69b9150c73ca041f54e2bf9b4490736b046f89a1390d8e87016d
+    name: cassandra
+    urls:
+    - cassandra-8.0.0.tgz
+    version: 8.0.0
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.946691723Z"
+    description: ONAP cassandra
+    digest: fe73241beaef22c7c7586800a808e29a8d453951b7c8ed87a9b9c9f42a52fb6e
+    name: cassandra
+    urls:
+    - cassandra-7.0.1.tgz
+    version: 7.0.1
+  cds:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.957936812Z"
+    description: ONAP Controller Design Studio (CDS)
+    digest: 365c52a1bf6debb9790db8c0d5755a64aac3ee312da3f98d88a9b29bd4a32514
+    name: cds
+    urls:
+    - cds-7.0.1.tgz
+    version: 7.0.1
+  cert-wrapper:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.968735426Z"
+    description: Wrapper chart to allow truststore to be shared among cert-initializer
+      instances
+    digest: 60f2e4106666c090b86f44c965073d73f3fa4541dbcf241f5b8a7ff46bf0a05f
+    name: cert-wrapper
+    urls:
+    - cert-wrapper-7.0.1.tgz
+    version: 7.0.1
+  certInitializer:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.979612427Z"
+    description: Template used to obtain certificates in onap
+    digest: 27ee40dee1b169fb1f36202f197fdc7115af55f0529694f9b8a88fc4ffbcd216
+    name: certInitializer
+    urls:
+    - certInitializer-8.0.0.tgz
+    version: 8.0.0
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.973807798Z"
+    description: Template used to obtain certificates in onap
+    digest: ccee43eb320b9f880162fae4a44383937ab0bc64b288b9eb2c99146dc186a012
+    name: certInitializer
+    urls:
+    - certInitializer-7.0.1.tgz
+    version: 7.0.1
+  certManagerCertificate:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:20.982312679Z"
+    description: A Helm chart for Cert-Manager Certificate CRD template
+    digest: 1312fb7e8835b6d95411b126a3b4afa5b302b7689f547c047784f893def56b65
+    name: certManagerCertificate
+    urls:
+    - certManagerCertificate-8.0.0.tgz
+    version: 8.0.0
+  clamp:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.016021532Z"
+    description: ONAP Clamp
+    digest: 88d26c5d4e73af9a1300ae676f2130cc9b4747661f30ea893e0c9aee5903a3dd
+    name: clamp
+    urls:
+    - clamp-7.0.1.tgz
+    version: 7.0.1
+  clamp-backend:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.020235503Z"
+    description: ONAP Clamp
+    digest: 45a8a446be9b20a38ed96d51308ed5155efd422057bd212b11f2f496ebf4e9f6
+    name: clamp-backend
+    urls:
+    - clamp-backend-7.0.1.tgz
+    version: 7.0.1
+  clamp-dash-es:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.025891515Z"
+    description: ONAP Clamp Dashboard Elasticsearch
+    digest: 6cbb2cb100f07e1645d9040ff934dc128b84f40f81c688b990d385a07124df1b
+    name: clamp-dash-es
+    urls:
+    - clamp-dash-es-7.0.1.tgz
+    version: 7.0.1
+  clamp-dash-kibana:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.031549466Z"
+    description: ONAP Clamp Dashboard Kibana
+    digest: ce8ad6d26e8a22a1582f333e6b74b9ccf3613d5ce64e70e77f08c731ca9a781d
+    name: clamp-dash-kibana
+    urls:
+    - clamp-dash-kibana-7.0.1.tgz
+    version: 7.0.1
+  clamp-dash-logstash:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.037242507Z"
+    description: ONAP Clamp Dashboard Logstash
+    digest: 9ef2474295d3f413a05f5f35db49006e8a772236c1a3288e1af1186abe07206c
+    name: clamp-dash-logstash
+    urls:
+    - clamp-dash-logstash-7.0.1.tgz
+    version: 7.0.1
+  clamp-mariadb:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.04132007Z"
+    description: MariaDB Service
+    digest: 9cb03f11dc4880d81f152580a6185651a5983a3a16574dcdf2c7eee274272bee
+    name: clamp-mariadb
+    urls:
+    - clamp-mariadb-7.0.1.tgz
+    version: 7.0.1
+  cli:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.044579074Z"
+    description: ONAP Command Line Interface
+    digest: 6a22675d1e46b4387c0ecf2041e51671c4e40bd434e84829784dab884ae8589b
+    name: cli
+    urls:
+    - cli-7.0.1.tgz
+    version: 7.0.1
+  cmpv2Config:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.046691366Z"
+    description: Template used to store cmpv2 configuration in onap
+    digest: f1d3b42067a058eda2662159eea65f5c5f5db4482264319182b5b3b3fc066afb
+    name: cmpv2Config
+    urls:
+    - cmpv2Config-7.0.1.tgz
+    version: 7.0.1
+  common:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.050237372Z"
+    description: Common templates for inclusion in other charts
+    digest: d8f21213bd307c380df2c88fbb9613b829c8b19864cc7274f3ebcb2348ca0036
+    name: common
+    urls:
+    - common-8.0.0.tgz
+    version: 8.0.0
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.048452783Z"
+    description: Common templates for inclusion in other charts
+    digest: 9318e8764d5dc8546ed0fb1612041e23cdc5a12f9fc2fdb3dc3b43c8f787a8ad
+    name: common
+    urls:
+    - common-7.0.1.tgz
+    version: 7.0.1
+  consul:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.053771849Z"
+    description: ONAP Consul Agent
+    digest: 352f7d9c6dcb95984a1632b760c371ee7d4b97476c9b1d1a604546e32fd498a4
+    name: consul
+    urls:
+    - consul-7.0.1.tgz
+    version: 7.0.1
+  contrib:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.069260752Z"
+    description: ONAP optional tools
+    digest: a8728998dbfb38759a6f32bc58b8473e2a5868e951af94a8e4839ad50683f61e
+    name: contrib
+    urls:
+    - contrib-7.0.1.tgz
+    version: 7.0.1
+  dcaegen2:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.100524531Z"
+    description: ONAP DCAE Gen2
+    digest: 6deed4904c272f19877c109732774075f5d8156363f0cdd02aa998e8c96461c8
+    name: dcaegen2
+    urls:
+    - dcaegen2-7.0.1.tgz
+    version: 7.0.1
+  dcaemod:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.122480683Z"
+    description: ONAP DCAE MOD
+    digest: da6d62ae0e136613a20228b056a97a9d31db0d1aae82bcf5fbfaa9b4b6bcd845
+    name: dcaemod
+    urls:
+    - dcaemod-7.0.1.tgz
+    version: 7.0.1
+  dgbuilder:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.129400913Z"
+    description: D.G. Builder application
+    digest: 54e661d8906b554571800a5e7c94fb73efc2fc9d1a3c3dd8a63cbff83579d9fb
+    name: dgbuilder
+    urls:
+    - dgbuilder-7.0.1.tgz
+    version: 7.0.1
+  dmaap:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.162008742Z"
+    description: ONAP DMaaP components
+    digest: b525f79c715022091a4a52afed046d75c6097c37389ee2b2a232567c354a9d2d
+    name: dmaap
+    urls:
+    - dmaap-7.0.1.tgz
+    version: 7.0.1
+  dmaap-listener:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.164722254Z"
+    description: SDNC DMaaP Listener
+    digest: f5b5de01031dcb63dec7f02c1af8c18c120582de0bf1db4bb7493a45aa9b8076
+    name: dmaap-listener
+    urls:
+    - dmaap-listener-7.0.1.tgz
+    version: 7.0.1
+  elasticsearch:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.172833201Z"
+    description: ONAP elasticsearch
+    digest: 877a27142e9e45f96005c0e885e2a5eb835d975b5abe2e4cc9484bb785bda42c
+    name: elasticsearch
+    urls:
+    - elasticsearch-7.0.1.tgz
+    version: 7.0.1
+  esr:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.175657584Z"
+    description: ONAP External System Register
+    digest: 4c831f97979ee6da49c4830654045d79ea5cd1982056a3dc8cd070b57acc8f65
+    name: esr
+    urls:
+    - esr-7.0.1.tgz
+    version: 7.0.1
+  etcd:
+  - apiVersion: v1
+    appVersion: 2.2.5
+    created: "2021-06-15T11:21:21.178082098Z"
+    description: Distributed reliable key-value store for the most critical data of
+      a distributed system.
+    digest: 7205bc708edd8e033d8292aaff02387acedff47ac41a00c7a5557ebd3b24eb34
+    home: https://github.com/coreos/etcd
+    name: etcd
+    sources:
+    - https://github.com/coreos/etcd
+    urls:
+    - etcd-7.0.1.tgz
+    version: 7.0.1
+  log:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.181627825Z"
+    description: ONAP Logging ElasticStack
+    digest: 7c85e24c2d29bf2a43d9b3c7d08bc9bf14f1b6fc978a8f800a4a11edf036837c
+    name: log
+    urls:
+    - log-7.0.1.tgz
+    version: 7.0.1
+  logConfiguration:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.183645904Z"
+    description: Template used to create same STDOUT log configuration
+    digest: fc9539fa4b317098919a6daa96cab64be5af3e3fdc30d2b114cc1a693360a58a
+    name: logConfiguration
+    urls:
+    - logConfiguration-7.0.1.tgz
+    version: 7.0.1
+  mariadb-galera:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.186179293Z"
+    description: Chart for MariaDB Galera cluster
+    digest: 1510a8d1c4257937dc33962c1d529f2f3c9094dadc475476c16adeff4a44e563
+    keywords:
+    - mariadb
+    - mysql
+    - database
+    - sql
+    - galera
+    - cluster
+    name: mariadb-galera
+    urls:
+    - mariadb-galera-7.0.1.tgz
+    version: 7.0.1
+  mariadb-init:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.188345724Z"
+    description: Chart for MariaDB Galera init job
+    digest: 377aebd53a53374423fb3c6a793bebf87310b7ff108d07e700c16a84fefaecb9
+    name: mariadb-init
+    urls:
+    - mariadb-init-7.0.1.tgz
+    version: 7.0.1
+  modeling:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.202454726Z"
+    description: ONAP Modeling (Modeling)
+    digest: 6421c04c8407abd1395fe553b3399bdfba45467eee5043d5e189834a95c52bad
+    name: modeling
+    urls:
+    - modeling-7.0.1.tgz
+    version: 7.0.1
+  mongo:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.205173546Z"
+    description: MongoDB Server
+    digest: eb4c271ed8c0328b2dabb02e89ce475695cf59ff06ed48eb68f4ad88125f6f19
+    name: mongo
+    urls:
+    - mongo-7.0.1.tgz
+    version: 7.0.1
+  msb:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.210319459Z"
+    description: ONAP MicroServices Bus
+    digest: edb3ac6ca16f05041d494bc0ad1b503014aa7a291f8ae35deb4c7dbf3a39a7d4
+    name: msb
+    urls:
+    - msb-7.0.1.tgz
+    version: 7.0.1
+  multicloud:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.22300308Z"
+    description: ONAP multicloud broker
+    digest: d3b178c4afa6e6812003af90319bb0b0dbac1335d7de675c0753d8ba34854b06
+    name: multicloud
+    urls:
+    - multicloud-7.0.1.tgz
+    version: 7.0.1
+  music:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.230686731Z"
+    description: MUSIC - Multi-site State Coordination Service
+    digest: f1ebd106a81c702595e9d7b086e3bf5e91f9db9e09c3210e39c8cbe4dc233faf
+    name: music
+    urls:
+    - music-7.0.1.tgz
+    version: 7.0.1
+  nbi:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.244903349Z"
+    description: ONAP Northbound Interface
+    digest: ed9751d442a9f1e35416f814a79bf50188266a463f71cf088d6c18b0e821fd81
+    name: nbi
+    urls:
+    - nbi-7.0.1.tgz
+    version: 7.0.1
+  network-name-gen:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.251528346Z"
+    description: Name Generation Micro Service
+    digest: f951885450535b0432489d5e8f65fe8e858248575c75afce410f5013f0c25cda
+    name: network-name-gen
+    urls:
+    - network-name-gen-7.0.1.tgz
+    version: 7.0.1
+  onap:
+  - apiVersion: v1
+    appVersion: Guilin
+    created: "2021-06-15T11:21:21.900088272Z"
+    description: Open Network Automation Platform (ONAP)
+    digest: 63cfbaa0d21b0f4b37ca92812278f06f42564b9462a397f76bc2462ea5720f38
+    home: https://www.onap.org/
+    icon: https://wiki.onap.org/download/thumbnails/1015829/onap_704x271%20copy.png?version=1&modificationDate=1488326334000&api=v2
+    kubeVersion: '>=1.11.5-0'
+    name: onap
+    sources:
+    - https://gerrit.onap.org/r/#/admin/projects/
+    urls:
+    - onap-7.0.1.tgz
+    version: 7.0.1
+  oof:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:21.96784505Z"
+    description: ONAP Optimization Framework
+    digest: e83a5697fe57fc6fd752e587ff5ec0dee0a6b4032cde7f451ea1cf004145daa8
+    name: oof
+    urls:
+    - oof-7.0.1.tgz
+    version: 7.0.1
+  oof-cmso:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.000621245Z"
+    description: Chart for Change Management Service Orchestrator (CMSO)
+    digest: 944efdb71011f4b6c06645af46037565de1ada87d097d17eab11b946361326c8
+    name: oof-cmso
+    urls:
+    - oof-cmso-7.0.1.tgz
+    version: 7.0.1
+  oof-cmso-optimizer:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.006718673Z"
+    description: Chart for Change Management Service Orchestrator (CMSO) Optimizer
+    digest: 389884a7d564841bee10cf2886747354b0e5bb16300119e8b4b7eb4a3b297e5b
+    name: oof-cmso-optimizer
+    urls:
+    - oof-cmso-optimizer-7.0.1.tgz
+    version: 7.0.1
+  oof-cmso-service:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.012764992Z"
+    description: Chart for Change Management Service Orchestrator (CMSO) Service
+    digest: 1086df846339182fbb7ac8bd968ef01b70e2b585e5df75cc3bdbba2368c4d15f
+    name: oof-cmso-service
+    urls:
+    - oof-cmso-service-7.0.1.tgz
+    version: 7.0.1
+  oof-cmso-ticketmgt:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.018281906Z"
+    description: Chart for Change Management Service Orchestrator (CMSO) Ticket Management
+    digest: 3f929d35b393ef5ed17b5386b573195394117cf5eef1268458e3d1bda9b69eaa
+    name: oof-cmso-ticketmgt
+    urls:
+    - oof-cmso-ticketmgt-7.0.1.tgz
+    version: 7.0.1
+  oof-cmso-topology:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.02401829Z"
+    description: Chart for Change Management Service Orchestrator (CMSO) Service
+    digest: 41ba09a1a22c021837ce473e3ad8785f1c4730491499d8cd6af3e48f95a10a83
+    name: oof-cmso-topology
+    urls:
+    - oof-cmso-topology-7.0.1.tgz
+    version: 7.0.1
+  oof-has:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.049292266Z"
+    description: ONAP Homing and Allocation Service
+    digest: d81df3161f8d575f06cd7bd861c3226ce37b522c5c0aa4d6046aa6c9f1f48a19
+    name: oof-has
+    urls:
+    - oof-has-7.0.1.tgz
+    version: 7.0.1
+  oof-has-api:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.055383873Z"
+    description: ONAP Homing and Allocation Servicei - API
+    digest: 7d929d5ddb0cdc7cc20d7eec5d7fcb9b6208774d20984b35ee087789543e4264
+    name: oof-has-api
+    urls:
+    - oof-has-api-7.0.1.tgz
+    version: 7.0.1
+  oof-has-controller:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.058460777Z"
+    description: ONAP Homing and Allocation Sservice - Controller
+    digest: 3ee069ce573333440a2d77af8fe0d204d39c69ad9436dbb2791f5af96e8b5227
+    name: oof-has-controller
+    urls:
+    - oof-has-controller-7.0.1.tgz
+    version: 7.0.1
+  oof-has-data:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.061507666Z"
+    description: ONAP Homing and Allocation Service - Data Component
+    digest: d55c630ed3a14a7e06c785840aef49f15c400d09bc7811dab416ebf1b152cf8a
+    name: oof-has-data
+    urls:
+    - oof-has-data-7.0.1.tgz
+    version: 7.0.1
+  oof-has-reservation:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.064689054Z"
+    description: ONAP Homing and Allocation Sevice - Reservation Component
+    digest: 0b40303d8efd90b4835c70c5f86e1daa6bc6a2d68d24dcd47fdfae843f1d6f29
+    name: oof-has-reservation
+    urls:
+    - oof-has-reservation-7.0.1.tgz
+    version: 7.0.1
+  oof-has-solver:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.067772112Z"
+    description: ONAP Homing and Allocation Service - Solver Component
+    digest: 31c6424b165ff14816c8659bd9f3f2ba9ff24d04ec630f3bfee8952a5fe95974
+    name: oof-has-solver
+    urls:
+    - oof-has-solver-7.0.1.tgz
+    version: 7.0.1
+  oof-templates:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.069344717Z"
+    description: ONAP OOF helm templates
+    digest: 74d7cb3c806a4a32ab318d85ca0cdb7170b4cb3e377b18b54da5142602825e04
+    name: oof-templates
+    urls:
+    - oof-templates-7.0.1.tgz
+    version: 7.0.1
+  oom-cert-service:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.071762089Z"
+    description: ONAP Cert Service
+    digest: 58c618f5039713b9b831de46d206987e2e00976440e6ac28a6c312549e5fc56f
+    name: oom-cert-service
+    urls:
+    - oom-cert-service-7.0.1.tgz
+    version: 7.0.1
+  platform:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.0750658Z"
+    description: ONAP platform components
+    digest: 897ae26e8e3b87d56e0607269dcfbff46891cd390d2593f0306e66c2c1062660
+    name: platform
+    urls:
+    - platform-7.0.1.tgz
+    version: 7.0.1
+  policy:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.114350395Z"
+    description: ONAP Policy
+    digest: b2617dc5000c9c1d11da8815ff1eea8f3f525093f1e99c173a55181a4fb8fc1f
+    name: policy
+    urls:
+    - policy-7.0.1.tgz
+    version: 7.0.1
+  policy-apex-pdp:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.119849023Z"
+    description: ONAP Policy APEX PDP
+    digest: 9aa33106b5aca38b66286918993989230620bfca2e75cb408ffdc8d250ff7b56
+    name: policy-apex-pdp
+    urls:
+    - policy-apex-pdp-7.0.1.tgz
+    version: 7.0.1
+  policy-api:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.12530635Z"
+    description: ONAP Policy Design API
+    digest: eb8d07c156b15774a316b638a9816c7c60b347e31500754912ec9394a5445323
+    name: policy-api
+    urls:
+    - policy-api-7.0.1.tgz
+    version: 7.0.1
+  policy-distribution:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.130479492Z"
+    description: ONAP Policy Distribution
+    digest: ae3555be2e1f5756ba2fb620d4b63f328f40ca4662004b1a13a57083d3128460
+    name: policy-distribution
+    urls:
+    - policy-distribution-7.0.1.tgz
+    version: 7.0.1
+  policy-drools-pdp:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.140198903Z"
+    description: ONAP Drools Policy Engine (PDP-D)
+    digest: 5d6b55e4058c79aaeaff03f79146d7c18fb9e12ec0d09c823faee80dc8e93ab9
+    name: policy-drools-pdp
+    urls:
+    - policy-drools-pdp-7.0.1.tgz
+    version: 7.0.1
+  policy-nexus:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.143145256Z"
+    description: ONAP Policy Nexus
+    digest: d0437fabb16d4a90f61c399cf82287734367a62ccd9c9ff00fd5020f2fad8ed6
+    name: policy-nexus
+    urls:
+    - policy-nexus-7.0.1.tgz
+    version: 7.0.1
+  policy-pap:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.150325902Z"
+    description: ONAP Policy Administration (PAP)
+    digest: ccf8be5e707d4c4080724858941c0ee1318a4959cbdf59e2e90c352d69067560
+    name: policy-pap
+    urls:
+    - policy-pap-7.0.1.tgz
+    version: 7.0.1
+  policy-xacml-pdp:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.157348977Z"
+    description: ONAP Policy XACML PDP (PDP-X)
+    digest: 1499300cf8c7feba915d09b3d9681b889fa66eeef200c35940311910adcbd9d7
+    name: policy-xacml-pdp
+    urls:
+    - policy-xacml-pdp-7.0.1.tgz
+    version: 7.0.1
+  pomba:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.168959163Z"
+    description: ONAP Post Orchestration Model Based Audit
+    digest: 1293abc199e883a755fee89c34faf32e01051a223628092d133b3dcbf5c618a3
+    name: pomba
+    urls:
+    - pomba-7.0.1.tgz
+    version: 7.0.1
+  portal:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.197333812Z"
+    description: ONAP Web Portal
+    digest: e3a2d9e8519eeb5076fbed6ad85eb2d0576560724b141bd4e580c7aecf61ad3d
+    name: portal
+    urls:
+    - portal-7.0.1.tgz
+    version: 7.0.1
+  portal-app:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.205447528Z"
+    description: ONAP Portal application
+    digest: 089d8243383fa891c8a45e5409be0ede74f37ba135d6fcc03038a270e5da3768
+    name: portal-app
+    urls:
+    - portal-app-7.0.1.tgz
+    version: 7.0.1
+  portal-cassandra:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.207109146Z"
+    description: Portal cassandra
+    digest: e6888af3a3df77bb262cd552380984e2d442d0dfbf8ca82044a34a7af3939140
+    name: portal-cassandra
+    urls:
+    - portal-cassandra-7.0.1.tgz
+    version: 7.0.1
+  portal-mariadb:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.21002335Z"
+    description: MariaDB Service
+    digest: 88a291218094f840e21b1b438a3beecaabb9d1622e9c8a0085bc753d9f8963b1
+    name: portal-mariadb
+    urls:
+    - portal-mariadb-7.0.1.tgz
+    version: 7.0.1
+  portal-sdk:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.214644813Z"
+    description: Portal software development kit
+    digest: 8fd9dff1812350a1ca2a6eb810e1abc5e0cf0885685ebfda1134c76a63e9f33c
+    name: portal-sdk
+    urls:
+    - portal-sdk-7.0.1.tgz
+    version: 7.0.1
+  portal-widget:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.216223019Z"
+    description: Portal widgets micro service application
+    digest: 996f3f1f71e897e498ef4d649cb59cd97fe607944db96627e52a0d059a948559
+    name: portal-widget
+    urls:
+    - portal-widget-7.0.1.tgz
+    version: 7.0.1
+  postgres:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.219886381Z"
+    description: ONAP Postgres Server
+    digest: 8c6677d3d7339d9a4af2cabe1aaeb5bcd9ee7bb86caac758dc20eb253e16ec47
+    name: postgres
+    urls:
+    - postgres-7.0.1.tgz
+    version: 7.0.1
+  readinessCheck:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.224334069Z"
+    description: Template used to wait for other deployment/sts/jobs in onap
+    digest: e36baa561c98d1605229b88ed3e9f92e62de8104917bf6e922506bb98f9494d1
+    name: readinessCheck
+    urls:
+    - readinessCheck-8.0.0.tgz
+    version: 8.0.0
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.221967271Z"
+    description: Template used to wait for other deployment/sts/jobs in onap
+    digest: b01490e5f8e3e5071939625ba9d4f40b266ef6d7d9e8787385864b59f0b12356
+    name: readinessCheck
+    urls:
+    - readinessCheck-7.0.1.tgz
+    version: 7.0.1
+  repositoryGenerator:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.224921094Z"
+    description: Template used to generate the right repository link
+    digest: f9f7995d3a01ca557d72c5e128244f392ffb27c2714e23ccb7b5383e77dabc67
+    name: repositoryGenerator
+    urls:
+    - repositoryGenerator-8.0.0.tgz
+    version: 8.0.0
+  robot:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.228746188Z"
+    description: A helm Chart for kubernetes-ONAP Robot
+    digest: b47a3268cec1ecb360ca0ef1826b55b59ba32e1cd95be35e38332945e73729c5
+    name: robot
+    urls:
+    - robot-7.0.0.tgz
+    version: 7.0.0
+  sdc:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.256959637Z"
+    description: Service Design and Creation Umbrella Helm charts
+    digest: 14b5402aa5a5f55ab70c690f24b14b3784563dd201d3cd593e7da2e74df51e79
+    name: sdc
+    urls:
+    - sdc-7.0.1.tgz
+    version: 7.0.1
+  sdc-be:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.262829336Z"
+    description: ONAP Service Design and Creation Backend API
+    digest: a29f181910889177d8d911d3cfe6375bc82c075e49ebb05877363b3022021f7e
+    name: sdc-be
+    urls:
+    - sdc-be-7.0.1.tgz
+    version: 7.0.1
+  sdc-cs:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.265382253Z"
+    description: ONAP Service Design and Creation Cassandra
+    digest: f60e1e6012de049967bb130c8d7be0bcd963c68cb592baf6b00b432f5947cbf8
+    name: sdc-cs
+    urls:
+    - sdc-cs-7.0.1.tgz
+    version: 7.0.1
+  sdc-fe:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.270489666Z"
+    description: ONAP Service Design and Creation Front End
+    digest: 875c54e5f2324849e32ef5fb97b9a8477874794d33cf3b14af591ea1e7884dac
+    name: sdc-fe
+    urls:
+    - sdc-fe-7.0.1.tgz
+    version: 7.0.1
+  sdc-onboarding-be:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.27543129Z"
+    description: ONAP Service Design and Creation Onboarding API
+    digest: 0e430ae8aaf028f575204078b46bf7db2401e7372fb52b0b5a60610ebc9fdc7a
+    name: sdc-onboarding-be
+    urls:
+    - sdc-onboarding-be-7.0.1.tgz
+    version: 7.0.1
+  sdc-wfd-be:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.279886471Z"
+    description: ONAP Service Design and Creation Workflow Designer backend
+    digest: 9098f6bfc9976c24ce7ec69701a3cda066486730e4e701f2f711278379a85d29
+    name: sdc-wfd-be
+    urls:
+    - sdc-wfd-be-7.0.1.tgz
+    version: 7.0.1
+  sdc-wfd-fe:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.286370605Z"
+    description: ONAP Service Design and Creation Workflow Designer frontend
+    digest: 8430ddd7b678d775dbd7ba9be5faa698989c27a5ef0b12452135c1919dd07821
+    name: sdc-wfd-fe
+    urls:
+    - sdc-wfd-fe-7.0.1.tgz
+    version: 7.0.1
+  sdnc:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.344712515Z"
+    description: SDN Controller
+    digest: 59554f9a657b029629c65add4554389e336d4afb505b8af39bb39ae2dd1fb3f3
+    name: sdnc
+    urls:
+    - sdnc-7.0.1.tgz
+    version: 7.0.1
+  sdnc-ansible-server:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.346815401Z"
+    description: SDN-C Ansible Server
+    digest: 750766a7a134edaeaffa8a78c475e4ce9c7ae017dca892990e93f64fa1c51b38
+    name: sdnc-ansible-server
+    urls:
+    - sdnc-ansible-server-7.0.1.tgz
+    version: 7.0.1
+  sdnc-prom:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.349283001Z"
+    description: ONAP SDNC Policy Driven Ownership Management
+    digest: 41c6f236c2f86d164e231974a5f5e35dffbff8bb4d6767893d3bd091ad295d71
+    name: sdnc-prom
+    urls:
+    - sdnc-prom-7.0.1.tgz
+    version: 7.0.1
+  sdnc-web:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.354774642Z"
+    description: SDN-C Web Server
+    digest: 2ea3aaeb62fa0e5269a6c1599c12b64ef3b0805b684a4962ea4563a1389a60a7
+    name: sdnc-web
+    urls:
+    - sdnc-web-7.0.1.tgz
+    version: 7.0.1
+  serviceAccount:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.358539166Z"
+    description: Template used to create the right Service Accounts / Role / RoleBinding
+    digest: 7144fdb35ef6714748a226efe3b48aed073a35808d57a682a226be6bf8b3acd1
+    name: serviceAccount
+    urls:
+    - serviceAccount-8.0.0.tgz
+    version: 8.0.0
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.35655914Z"
+    description: Template used to create the right Service Accounts / Role / RoleBinding
+    digest: d5898d395c143ed0543de3d92900d9d8ba3b963baf270e3b0c92d296fef7f13a
+    name: serviceAccount
+    urls:
+    - serviceAccount-7.0.1.tgz
+    version: 7.0.1
+  sniro-emulator:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.360298628Z"
+    description: ONAP Mock Sniro Emulator
+    digest: e7f1e868a6b9d37f5cad1ec440d0de710dc1e82cefcbc90a9e6082f9c63097d8
+    name: sniro-emulator
+    urls:
+    - sniro-emulator-7.0.1.tgz
+    version: 7.0.1
+  so:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.533562105Z"
+    description: ONAP Service Orchestrator
+    digest: f727d28f2d124003b815f23d01495452dbee10351ff8d1ec8098aabfd1a402c4
+    name: so
+    urls:
+    - so-7.0.1.tgz
+    version: 7.0.1
+  so-appc-orchestrator:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.539881633Z"
+    description: A Helm chart for so appc orchestrator
+    digest: 69735c55a4115790807f1e7a35940a71b6e9dca24025b75923cd101ccd69e669
+    name: so-appc-orchestrator
+    urls:
+    - so-appc-orchestrator-7.0.1.tgz
+    version: 7.0.1
+  so-bpmn-infra:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-15T11:21:22.547621775Z"
+    description: A Helm chart for SO Bpmn Infra
+    digest: 12b0d6c73f21966cb21baf2fe18c07b3a4dd716daca44d05e489a9df58f210e6
+    name: so-bpmn-infra
+    urls:
+    - so-bpmn-infra-7.0.1.tgz
+    version: 7.0.1
+  so-catalog-db-adapter:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.555209497Z"
+    description: A Helm chart for so-catalog-db-adapter
+    digest: 17b05984a1ad9a830ed9cba4a38d872f0aeacee1e1647df94ac7461068fa3eb5
+    name: so-catalog-db-adapter
+    urls:
+    - so-catalog-db-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-cnf-adapter:
+  - apiVersion: v1
+    appVersion: 1.7.1
+    created: "2021-06-15T11:21:22.561179796Z"
+    description: A Helm chart for Kubernetes
+    digest: 5cc7e8ac9ef3a4df36a6bdcb1fa83839860d3edab1a6405ae53140d78d250493
+    name: so-cnf-adapter
+    urls:
+    - so-cnf-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-etsi-nfvo-ns-lcm:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.570788589Z"
+    description: ONAP SO ETSI NFVO NS LCM
+    digest: d48073b679a079a728fcbbbf9ecc6dd47ea2ffa4340783cdda494fa73e884669
+    name: so-etsi-nfvo-ns-lcm
+    urls:
+    - so-etsi-nfvo-ns-lcm-7.0.1.tgz
+    version: 7.0.1
+  so-mariadb:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.574149476Z"
+    description: MariaDB Service
+    digest: 04d16bbe36174a4c5ff196eb575ad1577080f0d265e56cf7a0290df6d15bbaea
+    name: so-mariadb
+    urls:
+    - so-mariadb-7.0.1.tgz
+    version: 7.0.1
+  so-monitoring:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.579802929Z"
+    description: A Helm chart for ONAP Service Orchestration Monitoring
+    digest: eaddc5ad47ae5682b7c1592a181639ee0de0f8f93f8ceaa97aa368ce961b90dd
+    name: so-monitoring
+    urls:
+    - so-monitoring-7.0.1.tgz
+    version: 7.0.1
+  so-nssmf-adapter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-15T11:21:22.588546202Z"
+    description: A Helm chart for Kubernetes
+    digest: 735925bb9a93b0f9372d519e7bbbcf4755e360b3b1df11c6def718bfbf7c1ce2
+    name: so-nssmf-adapter
+    urls:
+    - so-nssmf-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-oof-adapter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-15T11:21:22.594373994Z"
+    description: A Helm chart for Kubernetes
+    digest: 0c05e10c79dcd7ae4ce4cb3b664d9c36b359dc1b99b65a391da23ce0f3a3bed7
+    name: so-oof-adapter
+    urls:
+    - so-oof-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-openstack-adapter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-15T11:21:22.602678318Z"
+    description: A Helm chart for Kubernetes
+    digest: c101bae63572db0fcb2b0cad4f88b10d95b57afb7968a3c7613daaa29eb42ca4
+    name: so-openstack-adapter
+    urls:
+    - so-openstack-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-request-db-adapter:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.609417026Z"
+    description: A Helm chart for request-db-adapter
+    digest: 9b8d6d0e7ca03fea25519a798a6203369a72172b0448a545c2ae0c54083052d5
+    name: so-request-db-adapter
+    urls:
+    - so-request-db-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-sdc-controller:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-15T11:21:22.621415743Z"
+    description: A Helm chart for Kubernetes
+    digest: 95aa93c3e8ea83b03ce1068b4b7b64353e7c817a34a456cadc94ee12f1232687
+    name: so-sdc-controller
+    urls:
+    - so-sdc-controller-7.0.1.tgz
+    version: 7.0.1
+  so-sdnc-adapter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-15T11:21:22.63118177Z"
+    description: A Helm chart for Kubernetes
+    digest: 79035925c7f59ec97e7237a28b98ab437a0551c6efb4e02811e99202368dd670
+    name: so-sdnc-adapter
+    urls:
+    - so-sdnc-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-ve-vnfm-adapter:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.637713869Z"
+    description: ONAP SO VE VNFM Adapter (SOL002)
+    digest: f1872a32545980f4035c7281af316b58be620d6b2d28d30261ec05c5c0900f1d
+    name: so-ve-vnfm-adapter
+    urls:
+    - so-ve-vnfm-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-vfc-adapter:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-06-15T11:21:22.645014967Z"
+    description: A Helm chart for Kubernetes
+    digest: b8b19aeec2b100a2324d25375dd5c2342c83d288ffed167d4b27237856ae76b8
+    name: so-vfc-adapter
+    urls:
+    - so-vfc-adapter-7.0.1.tgz
+    version: 7.0.1
+  so-vnfm-adapter:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.65521903Z"
+    description: ONAP SO VNFM Adapter
+    digest: dfde9cfda46a98596b135f3836d5f6271554c636853a4175c73a5fd481d836e4
+    name: so-vnfm-adapter
+    urls:
+    - so-vnfm-adapter-7.0.1.tgz
+    version: 7.0.1
+  soHelpers:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.661768952Z"
+    description: A Helm chart for SO helpers
+    digest: decec2cc833aa3e4c453571fdb821b6fadfd6eda7ab28f57cd76c18dbaf7f6db
+    name: soHelpers
+    urls:
+    - soHelpers-7.0.1.tgz
+    version: 7.0.1
+  ueb-listener:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.664156943Z"
+    description: SDNC UEB Listener
+    digest: 76aef93a89e4fc3fc941ce554c8ce17b1ea6d258d9fd0bab0be8c2c1c770b970
+    name: ueb-listener
+    urls:
+    - ueb-listener-7.0.1.tgz
+    version: 7.0.1
+  uui:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.666815051Z"
+    description: ONAP uui
+    digest: 474f2a4ba3a15348a8bb3d0c097c89b19894d53b79dfd6719e97237c886984eb
+    name: uui
+    urls:
+    - uui-7.0.1.tgz
+    version: 7.0.1
+  vfc:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.675908104Z"
+    description: ONAP Virtual Function Controller (VF-C)
+    digest: a873b5e53c7dc6c300c86c8bf28d0c564f2128209023d44f086145d7ad46addb
+    name: vfc
+    urls:
+    - vfc-7.0.1.tgz
+    version: 7.0.1
+  vid:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.682239304Z"
+    description: ONAP Virtual Infrastructure Deployment
+    digest: c63b09b2bb00be1ad0a1a18b0a3b4424d24e1a8f5002cb83d573bb90184e1810
+    name: vid
+    urls:
+    - vid-7.0.1.tgz
+    version: 7.0.1
+  vnfsdk:
+  - apiVersion: v1
+    created: "2021-06-15T11:21:22.688262675Z"
+    description: ONAP VNF SDK
+    digest: 09a60132fb566b635ff443548316e2a2bc4bf6f98037846815655d5c9f8bf6e4
+    name: vnfsdk
+    urls:
+    - vnfsdk-7.0.1.tgz
+    version: 7.0.1
+generated: "2021-06-15T11:21:20.827047028Z"
