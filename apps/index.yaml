@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  magma:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-06-24T06:35:08.277792467Z"
+    description: A Helm chart for magma bundle
+    digest: 111270acc8110bce19e152eac3356cca39f0be3e378047c1f67d21e366aa1141
+    name: magma
+    urls:
+    - magma-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-06-24T06:35:08.246211089Z"
