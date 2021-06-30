@@ -3,7 +3,7 @@ entries:
   a1policymanagement:
   - apiVersion: v1
     appVersion: 1.0.0
-    created: "2021-06-22T15:44:03.554988271Z"
+    created: "2021-06-30T04:03:54.72340356Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -15,14 +15,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: A Helm chart for A1 Policy Management Service
-    digest: dcd12ba348696036e561503ddc8ba3758ebcc5816a09ff6ffd1d32127428f6be
+    digest: 027d477d13a059cd87b026399aca85df58e17c3e1b7a55d19c1a2cc6657a1e3a
     name: a1policymanagement
     urls:
     - a1policymanagement-8.0.0.tgz
     version: 8.0.0
   aaf:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.66032227Z"
+    created: "2021-06-30T04:03:54.826374523Z"
     dependencies:
     - name: aaf-cass
       repository: file://components/aaf-cass
@@ -55,14 +55,14 @@ entries:
       repository: file://components/aaf-sshsm
       version: ~8.x-0
     description: ONAP Application Authorization Framework
-    digest: 571dd5b407639b02dc0b86a215624ec263e66b81bf8116507de0919145aad3f7
+    digest: 4431b62c9bf7741297ad006d40ddf14e12973b55abf03effa3c9e33e686f5980
     name: aaf
     urls:
     - aaf-8.0.0.tgz
     version: 8.0.0
   aai:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.764220394Z"
+    created: "2021-06-30T04:03:54.921965689Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -106,14 +106,14 @@ entries:
       repository: file://components/aai-traversal
       version: ~8.x-0
     description: ONAP Active and Available Inventory
-    digest: e5e1d8a3f35d414b85d79b8a9948218077c418a05ebb1d3d5c63708e5e5b6fb4
+    digest: 8ff6072857334ee198c085d769fbebd50da9566fb78f1d1245dc92fb8fec8b00
     name: aai
     urls:
     - aai-8.0.0.tgz
     version: 8.0.0
   appc:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.810113872Z"
+    created: "2021-06-30T04:03:54.96201029Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -136,14 +136,14 @@ entries:
       repository: file://components/appc-cdt
       version: ~8.x-0
     description: Application Controller
-    digest: 5d8ec160371c117c29c24170fae27d406e95ae15b255fd89ac85f78052f2d262
+    digest: fc9e3d26051ef255c824ec71ad0ca6f25759779cfa893ada7e9d0a198b28fad2
     name: appc
     urls:
     - appc-8.0.0.tgz
     version: 8.0.0
   cassandra:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.815149255Z"
+    created: "2021-06-30T04:03:54.965780149Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -152,19 +152,16 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: ONAP cassandra
-    digest: 50f9a77b2defbb41109feaf680007f05ed5122143d4f9d4649a46a05c5f0270d
+    digest: 0565ece531db830565cd5d7f9ff70432b34e07ffc74eda32cc9015c3fc9a11c4
     name: cassandra
     urls:
     - cassandra-8.0.0.tgz
     version: 8.0.0
   cds:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.865815711Z"
+    created: "2021-06-30T04:03:54.996267019Z"
     dependencies:
     - name: common
-      repository: '@local'
-      version: ~8.x-0
-    - name: mariadb-galera
       repository: '@local'
       version: ~8.x-0
     - condition: cds-blueprints-processor.enabled
@@ -188,28 +185,28 @@ entries:
       repository: file://components/cds-ui
       version: ~8.x-0
     description: ONAP Controller Design Studio (CDS)
-    digest: f32854183ef105d7b42f6b1b6dc8ece81fa515fe5fd63be7b6c45c66b0cefb47
+    digest: 4ba9dbed09523f0d4812bfd5fc6d60de159e3a59870132bbb7f7c0c2846c9d82
     name: cds
     urls:
     - cds-8.0.0.tgz
     version: 8.0.0
   cert-wrapper:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.880079872Z"
+    created: "2021-06-30T04:03:55.004387312Z"
     dependencies:
     - name: certInitializer
       repository: file://../certInitializer
       version: ~8.x-0
     description: Wrapper chart to allow truststore to be shared among cert-initializer
       instances
-    digest: a2963dbfd9fc4aaf9c36bbbd66ede7865d99b9a21c161179d51a53feaa717314
+    digest: 19639ba44239cc49abba3fe846787553d5fcd5109e5e0580042e5bae10afff8e
     name: cert-wrapper
     urls:
     - cert-wrapper-8.0.0.tgz
     version: 8.0.0
   certInitializer:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.887261628Z"
+    created: "2021-06-30T04:03:55.008960165Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -221,27 +218,27 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: Template used to obtain certificates in onap
-    digest: ba8fff23113dc5e842343cd0c6078b9807448ab0a6cb4d07dd638cc10737654c
+    digest: 1c4c0af7b701e16909c84d4785b38d7c7d7431377328f9cfc7d5855b419ce198
     name: certInitializer
     urls:
     - certInitializer-8.0.0.tgz
     version: 8.0.0
   certManagerCertificate:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.890343561Z"
+    created: "2021-06-30T04:03:55.010829407Z"
     dependencies:
     - name: common
       repository: file://../common
       version: ~8.x-0
     description: A Helm chart for Cert-Manager Certificate CRD template
-    digest: 559f21f44b376d7a1f6970e703ebadf34eb32867329aa5c6c92d518c2fc2b059
+    digest: 4946190d5b3508c525b04e681875523e4796997adc5d47d8f5dcb028821bae1f
     name: certManagerCertificate
     urls:
     - certManagerCertificate-8.0.0.tgz
     version: 8.0.0
   cli:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.901102133Z"
+    created: "2021-06-30T04:03:55.018537524Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -253,14 +250,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Command Line Interface
-    digest: 6e27279341d776d6fe0f3a597f47aeb1b3eee3aebe07b34619698c5effd99259
+    digest: 6072ffc78bdf2cd5069859b698554311aa73bcb10ea479dcf6f06f973dcd35bf
     name: cli
     urls:
     - cli-8.0.0.tgz
     version: 8.0.0
   cmpv2-cert-provider:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.909894206Z"
+    created: "2021-06-30T04:03:55.022056448Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -269,14 +266,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP CMPv2 certificate external provider for cert-manager
-    digest: 132cc2a4d47443b94b11078fa1878a710d196be6f89d6788bf92886d9b7668c9
+    digest: c32c8884d63cb1990087a550e7437728a17f52edebfb1a0de5caf73792290a8d
     name: cmpv2-cert-provider
     urls:
     - cmpv2-cert-provider-8.0.0.tgz
     version: 8.0.0
   cmpv2Certificate:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.913291036Z"
+    created: "2021-06-30T04:03:55.02397255Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -285,36 +282,36 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: Template used to add cmpv2 certificates to components
-    digest: d65c2f0041659f8c33ce4a1c964f5bc49c227f2fa933bc5ad1dbaa8b1a35abe0
+    digest: 85d7229218c70a650f0b8d964dda47b7b8f6850dc0be2c4382e8b3cc9192b101
     name: cmpv2Certificate
     urls:
     - cmpv2Certificate-8.0.0.tgz
     version: 8.0.0
   cmpv2Config:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.915871669Z"
+    created: "2021-06-30T04:03:55.025484898Z"
     dependencies:
     - name: common
       repository: file://../common
       version: ~8.x-0
     description: Template used to store cmpv2 configuration in onap
-    digest: 768e05c11dbd3a3fad05c1b72251740d97bd02517f909cdd5f29714baa832aa5
+    digest: 984bcf24810ce32badc5f106042143861b6d54f692bc1bf91752c9e761b8523b
     name: cmpv2Config
     urls:
     - cmpv2Config-8.0.0.tgz
     version: 8.0.0
   common:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.917753089Z"
+    created: "2021-06-30T04:03:55.026461181Z"
     description: Common templates for inclusion in other charts
-    digest: 5320ffca7c51c9789cf30208f30f12f5246e262db1d5169ca93fd0259d73d48b
+    digest: 565ab66c7ae0861b8eed643f396993a97faf1ea5bb4890aa3ac71ee075253681
     name: common
     urls:
     - common-8.0.0.tgz
     version: 8.0.0
   consul:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.923781265Z"
+    created: "2021-06-30T04:03:55.032773899Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -327,14 +324,14 @@ entries:
       repository: file://components/consul-server
       version: ~8.x-0
     description: ONAP Consul Agent
-    digest: 657ef986bd57bd61ffee6029e359cb124f1e19fa4ee2132f8fcb76bece41bf44
+    digest: b97287d5bddfcf314ade166e9459972e418741dd176c06d9c5f7445877497b39
     name: consul
     urls:
     - consul-8.0.0.tgz
     version: 8.0.0
   contrib:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.968690622Z"
+    created: "2021-06-30T04:03:55.075502179Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -355,14 +352,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP optional tools
-    digest: 91e174f14cc2dc523655679beec3a99da8c0b31f13829c6afa58ab82dbaeedfe
+    digest: fa97d17bd7b10973aa271a2a5262e20504f22c1d01d7682df90af1eafcb0be48
     name: contrib
     urls:
     - contrib-8.0.0.tgz
     version: 8.0.0
   cps:
   - apiVersion: v1
-    created: "2021-06-22T15:44:03.9791595Z"
+    created: "2021-06-30T04:03:55.084695771Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -380,14 +377,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Configuration Persistance Service (CPS)
-    digest: 4cd4057152a1c22a54af600cdbf1f6d73dfa6889342bf5b7322b6922ea14d79b
+    digest: 93b2e3be494fe2386c7be44aceb43aef3e1786dffb187139330c43f91e9a8950
     name: cps
     urls:
     - cps-8.0.0.tgz
     version: 8.0.0
   dcaegen2:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.057526966Z"
+    created: "2021-06-30T04:03:55.134922368Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -433,7 +430,7 @@ entries:
       repository: file://components/dcae-ves-openapi-manager
       version: ~8.x-0
     description: ONAP DCAE Gen2
-    digest: 2f54d0206f9b4a8fb6901cfe7fb95b55c056593c8ff9ec986494848641d086bf
+    digest: b75b1857375f33df3e8a4b985e9b8ac3131754ce34d550d1164f04f574a5857a
     name: dcaegen2
     urls:
     - dcaegen2-8.0.0.tgz
@@ -441,7 +438,7 @@ entries:
   dcaegen2-services:
   - apiVersion: v1
     appVersion: Honolulu
-    created: "2021-06-22T15:44:04.121847232Z"
+    created: "2021-06-30T04:03:55.185174813Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -467,14 +464,14 @@ entries:
       repository: file://components/dcae-hv-ves-collector
       version: ~8.x-0
     description: DCAE Microservices
-    digest: 375615968a3d2c2c124c0017a695f34049056da1b9773641dabc571f9b6d3035
+    digest: ad27b9715b5a40f03c30f286500095ad344bdb792ed571d4fb5b123e4f8c9e20
     name: dcaegen2-services
     urls:
     - dcaegen2-services-8.0.0.tgz
     version: 8.0.0
   dcaemod:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.158307973Z"
+    created: "2021-06-30T04:03:55.213414972Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -508,14 +505,14 @@ entries:
       repository: file://components/dcaemod-healthcheck
       version: ~8.x-0
     description: ONAP DCAE MOD
-    digest: c93136f104b1ed00018a23510558c028b9322de497450b3ad09438b30f01dd65
+    digest: 2f9201111f7bd54b4010854740789bf0e4bc5f5db9eab5372b819963e4409f2e
     name: dcaemod
     urls:
     - dcaemod-8.0.0.tgz
     version: 8.0.0
   dgbuilder:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.171124724Z"
+    created: "2021-06-30T04:03:55.225721665Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -527,14 +524,14 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: D.G. Builder application
-    digest: 383465fc7e5590eed45131859a87879083b3ef1ec952002c683fa68525a0b833
+    digest: 0f24f9d901bf55bef0ea0dccb3bfbaa1c3cb3ae7e0e93d0c7ad1225f5f2556d7
     name: dgbuilder
     urls:
     - dgbuilder-8.0.0.tgz
     version: 8.0.0
   dmaap:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.264258935Z"
+    created: "2021-06-30T04:03:55.296156924Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -556,14 +553,14 @@ entries:
       repository: file://components/dmaap-dr-prov
       version: ~8.x-0
     description: ONAP DMaaP components
-    digest: db87835713f0a3e9824011b3e2352b29f674af158da8113e5b418627aa886c47
+    digest: dad8a0e6d29ac84d48efd3e2e018ed53a76a828b9a5639e645e938ddc9b1bd9c
     name: dmaap
     urls:
     - dmaap-8.0.0.tgz
     version: 8.0.0
   dmaap-listener:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.268379702Z"
+    created: "2021-06-30T04:03:55.299448559Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -572,14 +569,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: SDNC DMaaP Listener
-    digest: 0357210797b18db2ead5cfe9fc1d4ad8b8ea58eaaf64859f895b57c2b617e22a
+    digest: 139f214c5cd15a66ec17aca5cf46d23fa381d21c39e8e99084f56d5f1c16ac81
     name: dmaap-listener
     urls:
     - dmaap-listener-8.0.0.tgz
     version: 8.0.0
   elasticsearch:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.290526408Z"
+    created: "2021-06-30T04:03:55.318530298Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -602,14 +599,14 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: ONAP elasticsearch
-    digest: e8b3ef074160d03000b84e42280379a273108b6462d2eea04b2656ec4a77c096
+    digest: 28c82261109eb0c4a23b4411b9e8f9f70e3d0995493b39fa8c567493b7648e90
     name: elasticsearch
     urls:
     - elasticsearch-8.0.0.tgz
     version: 8.0.0
   esr:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.299124347Z"
+    created: "2021-06-30T04:03:55.32552886Z"
     dependencies:
     - condition: esr-gui.enabled
       name: esr-gui
@@ -619,7 +616,7 @@ entries:
       repository: file://components/esr-server
       version: ~8.x-0
     description: ONAP External System Register
-    digest: f06df5f6892a4aeb707e3acc611e80a79630536197c67c773ae00d3822eb7e2a
+    digest: 785926e3a6db5d4de2eedd136bd286c792e0509231b884820b86ec8e84dd586b
     name: esr
     urls:
     - esr-8.0.0.tgz
@@ -627,7 +624,7 @@ entries:
   etcd:
   - apiVersion: v1
     appVersion: 2.2.5
-    created: "2021-06-22T15:44:04.302225843Z"
+    created: "2021-06-30T04:03:55.328321918Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -637,7 +634,7 @@ entries:
       version: ~8.x-0
     description: Distributed reliable key-value store for the most critical data of
       a distributed system.
-    digest: 83394b17550655ab5bdd6ce5086b4d1f918113e2eeda4b71d3a53cceed76eb1d
+    digest: 7012b73045b99b1f89166a6c11f78396cc17eb9a18583d65c31fb9ce8f95afa9
     home: https://github.com/coreos/etcd
     name: etcd
     sources:
@@ -647,7 +644,7 @@ entries:
     version: 8.0.0
   holmes:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.337653411Z"
+    created: "2021-06-30T04:03:55.35322901Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -665,14 +662,14 @@ entries:
       repository: file://components/holmes-engine-mgmt
       version: ~8.x-0
     description: ONAP DCAE HOLMES
-    digest: 069a4b590cb3aa817c4b13fc9ee23d0c81b3ef11eafa30c25f065b29537a7f6a
+    digest: 05b9467b0852c13522748c7fbe1d6ba17b8eda8e60a132c6f701a1a52609de20
     name: holmes
     urls:
     - holmes-8.0.0.tgz
     version: 8.0.0
   log:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.363556123Z"
+    created: "2021-06-30T04:03:55.368874674Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -690,14 +687,14 @@ entries:
       repository: file://components/log-logstash
       version: ~8.x-0
     description: ONAP Logging ElasticStack
-    digest: 8bd033113db0536f2facbc07774e47d30b294e529b9810c47fe16d9dfd42c30f
+    digest: 57a78ebbbfbe7032e3d7eeb502d1556a505f9a326b0d06b53ee71d4b9baf11f8
     name: log
     urls:
     - log-8.0.0.tgz
     version: 8.0.0
   log-elasticsearch:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.368762109Z"
+    created: "2021-06-30T04:03:55.374274599Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -706,14 +703,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Logging Elasticsearch
-    digest: f481c05788ca8777719fdfad21d340a9b3e2b11c74e0e270e06d187ff233c4a2
+    digest: 50aa86ff2fff26b63125dd079ebe546ff11845a56f215526e06996af3da5b3e3
     name: log-elasticsearch
     urls:
     - log-elasticsearch-8.0.0.tgz
     version: 8.0.0
   log-kibana:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.373473418Z"
+    created: "2021-06-30T04:03:55.380024585Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -722,14 +719,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Logging Kibana
-    digest: 406e71464b518c0bb2721badc855400c65269c4b793f472ed0cf8ac31c7c9265
+    digest: 906eb82b464c4a2dd8f93d440f9d0c83b4c2fa3b7522b067d726ee49a22a798f
     name: log-kibana
     urls:
     - log-kibana-8.0.0.tgz
     version: 8.0.0
   log-logstash:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.378116707Z"
+    created: "2021-06-30T04:03:55.383430244Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -738,27 +735,27 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Logging Logstash
-    digest: bc71c5d027fda2629eb96e51dfe895197587c2c899cab6c1b2745100d13dea25
+    digest: e4eb93c622c0a7ada403707aa4831f82cf5a1c52c7c50efaa1078b84363c419a
     name: log-logstash
     urls:
     - log-logstash-8.0.0.tgz
     version: 8.0.0
   logConfiguration:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.38098657Z"
+    created: "2021-06-30T04:03:55.386080838Z"
     dependencies:
     - name: common
       repository: file://../common
       version: ~8.x-0
     description: Template used to create same STDOUT log configuration
-    digest: c7a835580c632c2a0c0edeb532dad35143020557784dda92912c9e2bb560ee15
+    digest: dd61fa9984eea5c950702687db06b7bf86d3802942ea696b858369be854d87c1
     name: logConfiguration
     urls:
     - logConfiguration-8.0.0.tgz
     version: 8.0.0
   mariadb-galera:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.393011911Z"
+    created: "2021-06-30T04:03:55.399193466Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -773,7 +770,7 @@ entries:
       repository: file://../serviceAccount
       version: ~8.x-0
     description: Chart for MariaDB Galera cluster
-    digest: 516e3838f6ef61a3e3aff87068083756f001926e9a5d00df5b62c975ea92a3e4
+    digest: 0f2cd3817dad0394b880b7dcf746c8ee8f8d2cd4d18ca9551ae3e9356d4420d4
     keywords:
     - mariadb
     - mysql
@@ -787,7 +784,7 @@ entries:
     version: 8.0.0
   mariadb-init:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.4015556Z"
+    created: "2021-06-30T04:03:55.402475612Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -796,27 +793,27 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: Chart for MariaDB Galera init job
-    digest: dd5844b6ef54349a935520ebd68abd290b2ae1d951a3ce7809609b85d1147019
+    digest: 200eed54141793c1097f63a8833e0596352f6f8bc0e1d6a7a2b4dbd006ca9e54
     name: mariadb-init
     urls:
     - mariadb-init-8.0.0.tgz
     version: 8.0.0
   modeling:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.444363213Z"
+    created: "2021-06-30T04:03:55.422787203Z"
     dependencies:
     - name: modeling-etsicatalog
       repository: file://components/modeling-etsicatalog
       version: ~8.x-0
     description: ONAP Modeling (Modeling)
-    digest: fe3f01c79a7eb53ac183851b3db01f9371d741bdb488cb6bfeb72200972a3a91
+    digest: 67b381085c8aeaef2dccfb782790483e05b7b45ff44dec392e0b52ee2e76ee50
     name: modeling
     urls:
     - modeling-8.0.0.tgz
     version: 8.0.0
   mongo:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.44823569Z"
+    created: "2021-06-30T04:03:55.425319152Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -825,14 +822,14 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: MongoDB Server
-    digest: 436d35455fce0bc1aa45af6feed966af902c178f3cbc46dbb71d578ad6550f6c
+    digest: 770252fdbe477e7cc0c9d097a994c92fa8bea51112c9233b2a2c6880ebf4e907
     name: mongo
     urls:
     - mongo-8.0.0.tgz
     version: 8.0.0
   msb:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.500246183Z"
+    created: "2021-06-30T04:03:55.469714875Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -856,14 +853,14 @@ entries:
       repository: file://components/msb-iag
       version: ~8.x-0
     description: ONAP MicroServices Bus
-    digest: 5cf32c887be85c312fe6e41d7c295f6882e8639ec666401721967ecac1919854
+    digest: 992a7b2e7265d42a360bc395e3557bb8383698d377df468d5eb4f10fd63548cf
     name: msb
     urls:
     - msb-8.0.0.tgz
     version: 8.0.0
   multicloud:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.544279269Z"
+    created: "2021-06-30T04:03:55.506029861Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -900,14 +897,14 @@ entries:
       repository: file://components/multicloud-windriver
       version: ~8.x-0
     description: ONAP multicloud broker
-    digest: cacaa88cd9cd48641eae786347234116db7d8df2a56b6ce0891f7cf7097866cc
+    digest: ff217b76ebb1293eecc0f46356af9289437fe378c046ab313c07a1dfd67b1e76
     name: multicloud
     urls:
     - multicloud-8.0.0.tgz
     version: 8.0.0
   music:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.568202237Z"
+    created: "2021-06-30T04:03:55.516741637Z"
     dependencies:
     - name: music-cassandra
       repository: file://components/music-cassandra
@@ -922,14 +919,14 @@ entries:
       repository: file://../certInitializer
       version: ~8.x-0
     description: MUSIC - Multi-site State Coordination Service
-    digest: 776087b29c9264fe841cac28c858f5ace9320ed0d3e1e8303e3bd245cf14a56e
+    digest: 2229322a6438733618b08a3050a9ff8a7eab97f25e0becb5d28bb6d0955f4909
     name: music
     urls:
     - music-8.0.0.tgz
     version: 8.0.0
   nbi:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.600905171Z"
+    created: "2021-06-30T04:03:55.549311954Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -952,14 +949,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Northbound Interface
-    digest: babaf97d5af1508d83e8b69ff82218682d5664b829c53233b775b6c893ee804e
+    digest: 837b882714acaea3bc2730494c794695656cfb7f3492f4c39bae0e11bc222bba
     name: nbi
     urls:
     - nbi-8.0.0.tgz
     version: 8.0.0
   network-name-gen:
   - apiVersion: v1
-    created: "2021-06-22T15:44:04.621244629Z"
+    created: "2021-06-30T04:03:55.566757895Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -976,7 +973,7 @@ entries:
       repository: file://../mariadb-init
       version: ~8.x-0
     description: Name Generation Micro Service
-    digest: 4881db57cfccbaff4168fae7cb51c6e5b33113b8ee50b3ab49ca806f5a096ce0
+    digest: d437d6acfe93fa80fa606e32e054529734005471406d7b8ea8b1d44f932a6286
     name: network-name-gen
     urls:
     - network-name-gen-8.0.0.tgz
@@ -984,7 +981,7 @@ entries:
   onap:
   - apiVersion: v1
     appVersion: Guilin
-    created: "2021-06-22T15:44:06.276731802Z"
+    created: "2021-06-30T04:03:56.988006764Z"
     dependencies:
     - condition: aaf.enabled
       name: aaf
@@ -1137,7 +1134,7 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Open Network Automation Platform (ONAP)
-    digest: 975107c9180a2e6e8f23f7d3197c1638dff559faffd0c454504c3d1c3667088f
+    digest: c42c8c390bacee32f7406a80ae5f855b8cc33c845f804b13643a78b130c5a740
     home: https://www.onap.org/
     icon: https://wiki.onap.org/download/thumbnails/1015829/onap_704x271%20copy.png?version=1&modificationDate=1488326334000&api=v2
     kubeVersion: '>=1.11.5-0'
@@ -1149,7 +1146,7 @@ entries:
     version: 8.0.0
   oof:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.404093066Z"
+    created: "2021-06-30T04:03:57.069344102Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1172,14 +1169,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Optimization Framework
-    digest: 44b6204773067821f1642a3feb43f8bf6dd47f1cedcc9e1685f829b6f464cb8b
+    digest: 0615ea1b8b6853a509269a100d385fcdc54f5c048a6676a6517ecf9ec7b8f2db
     name: oof
     urls:
     - oof-8.0.0.tgz
     version: 8.0.0
   oof-cmso:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.447853965Z"
+    created: "2021-06-30T04:03:57.105636586Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1210,14 +1207,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Chart for Change Management Service Orchestrator (CMSO)
-    digest: 077d173361d075586afdc54c16bed22484aa52ce1e36155e96324ced105381ae
+    digest: d14130f007d7e29cc328795352385cee0fb0c9f36990ab368da21324765491b9
     name: oof-cmso
     urls:
     - oof-cmso-8.0.0.tgz
     version: 8.0.0
   oof-cmso-optimizer:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.455519761Z"
+    created: "2021-06-30T04:03:57.111928078Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1229,14 +1226,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Chart for Change Management Service Orchestrator (CMSO) Optimizer
-    digest: 3814728c96f27a5a6bc4cb17ffd58ad74313579a48e2c0e93eb19f79eeae4d61
+    digest: 9cb6dd77f781522c7b93bce4a6aeaf4ec7dbf80df2ba3f37ae1d411e83de8ca9
     name: oof-cmso-optimizer
     urls:
     - oof-cmso-optimizer-8.0.0.tgz
     version: 8.0.0
   oof-cmso-service:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.463049244Z"
+    created: "2021-06-30T04:03:57.118202346Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1248,14 +1245,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Chart for Change Management Service Orchestrator (CMSO) Service
-    digest: 309768e77f3c2ca0d6c0e4dbe66ac87cf3bd70c9f277bebcc1f0e1f9097b3e45
+    digest: 8c5290d9029c0223113fc932b748cf4d31d4d37fa09e391b12c0dd4900d80c89
     name: oof-cmso-service
     urls:
     - oof-cmso-service-8.0.0.tgz
     version: 8.0.0
   oof-cmso-ticketmgt:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.470423237Z"
+    created: "2021-06-30T04:03:57.124482956Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1267,14 +1264,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Chart for Change Management Service Orchestrator (CMSO) Ticket Management
-    digest: 21fcd179513b5ddb30800d480cfa1bd2443d570a6d1efc4c27bac67d283639df
+    digest: cc6e7b2b700c46e8fcc66a4305545a9c7a674e8d2ef4f2a00aa31a67d16f5a39
     name: oof-cmso-ticketmgt
     urls:
     - oof-cmso-ticketmgt-8.0.0.tgz
     version: 8.0.0
   oof-cmso-topology:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.477603384Z"
+    created: "2021-06-30T04:03:57.130649329Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1286,14 +1283,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Chart for Change Management Service Orchestrator (CMSO) Service
-    digest: 13d15aa5be54dac5de5068225868bbfced4f8a89badfa6cd0caf18ec863d1016
+    digest: 2c3e6536eebefa0f49521a3b1a041aa8ff93d1188464b53aa5770aa7164d6e53
     name: oof-cmso-topology
     urls:
     - oof-cmso-topology-8.0.0.tgz
     version: 8.0.0
   oof-has:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.516423271Z"
+    created: "2021-06-30T04:03:57.184103762Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1325,14 +1322,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Homing and Allocation Service
-    digest: eeda7885f3d143f84b82919f6dd19a5dcf80f0452805c4b948a39798101e7447
+    digest: 1463350ba5052ca579bc28be17f4d4a88e6c998e202bd69691c08a7951288c52
     name: oof-has
     urls:
     - oof-has-8.0.0.tgz
     version: 8.0.0
   oof-has-api:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.525464959Z"
+    created: "2021-06-30T04:03:57.20090842Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1347,14 +1344,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Homing and Allocation Servicei - API
-    digest: 47bcc1e0bf807b2da1c10cefc4bfebb53913a5174d020888fab45c0533a99fd5
+    digest: ae57e2f5612264a3b55af16072241786d40be929f34737e7ab91d87ef37a8db9
     name: oof-has-api
     urls:
     - oof-has-api-8.0.0.tgz
     version: 8.0.0
   oof-has-controller:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.52978572Z"
+    created: "2021-06-30T04:03:57.207957572Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1366,14 +1363,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Homing and Allocation Sservice - Controller
-    digest: 3911f60da14674dc89c27a2db25cc82052a7987eef3dc20dea77e58748ba5675
+    digest: 6c74fe68003d2d64880ac3394eb54ca7777c40c8452db25e5d2d408f66f1505b
     name: oof-has-controller
     urls:
     - oof-has-controller-8.0.0.tgz
     version: 8.0.0
   oof-has-data:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.534007816Z"
+    created: "2021-06-30T04:03:57.214718101Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1385,14 +1382,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Homing and Allocation Service - Data Component
-    digest: 46bfeb4d349f00357b4954f3524fdc4a888ca945b1305d1133abba1bcbcc7b9a
+    digest: 3883b3f52424fa0f9a35b3a52cec4d49d80aea2569676b8e0f30e28b87005832
     name: oof-has-data
     urls:
     - oof-has-data-8.0.0.tgz
     version: 8.0.0
   oof-has-reservation:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.538220691Z"
+    created: "2021-06-30T04:03:57.22348488Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1404,14 +1401,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Homing and Allocation Sevice - Reservation Component
-    digest: fe4b8dc3bd4f5f3d17e2fe387e8b7705477156e80acdb975ffe44bac6a478881
+    digest: 6dd8c232200e437fcea3043e50636d74e315992484db083637a5468bacbfe1d7
     name: oof-has-reservation
     urls:
     - oof-has-reservation-8.0.0.tgz
     version: 8.0.0
   oof-has-solver:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.543665712Z"
+    created: "2021-06-30T04:03:57.228620836Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1423,27 +1420,27 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Homing and Allocation Service - Solver Component
-    digest: 692397d589137e0f628c278673d4cfa3fdf13016433dca231b3a909bbf0420c6
+    digest: b9bdc6bbfcf4bc18245a39b34516cca2e27f703b8b18901f186bc413122e3c27
     name: oof-has-solver
     urls:
     - oof-has-solver-8.0.0.tgz
     version: 8.0.0
   oof-templates:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.545491851Z"
+    created: "2021-06-30T04:03:57.2302482Z"
     dependencies:
     - name: common
       repository: '@local'
       version: ~8.x-0
     description: ONAP OOF helm templates
-    digest: 80ec1dff6e99ed4c8f0058fd7f77d195d764149e27fe3de0175fd2960dcfe56f
+    digest: fb07120d242038608b491ebe572366bdd089376386ca59a542c761da3a8ecf32
     name: oof-templates
     urls:
     - oof-templates-8.0.0.tgz
     version: 8.0.0
   oom-cert-service:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.552163942Z"
+    created: "2021-06-30T04:03:57.233987702Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1452,14 +1449,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Cert Service
-    digest: 7532eaf9f8f67362176df72ee118ab429303b0258f645332caf7170992db425a
+    digest: c99f26a0a9c17e367ebc9d22d93dac0d63a48af6dbcb9083102b09babcf9670c
     name: oom-cert-service
     urls:
     - oom-cert-service-8.0.0.tgz
     version: 8.0.0
   platform:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.56215911Z"
+    created: "2021-06-30T04:03:57.241979549Z"
     dependencies:
     - name: oom-cert-service
       repository: file://components/oom-cert-service
@@ -1468,14 +1465,14 @@ entries:
       repository: file://components/cmpv2-cert-provider
       version: ~8.x-0
     description: ONAP platform components
-    digest: 1399dc3fe3b4399ca3a1fb7723fe201d85e51d79a80fe08007d90030e288b9c8
+    digest: 7987f3186a66d12a809d60a9f67b61261bbf00207f941b01a65577744f007555
     name: platform
     urls:
     - platform-8.0.0.tgz
     version: 8.0.0
   policy:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.645497903Z"
+    created: "2021-06-30T04:03:57.327789009Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1523,14 +1520,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Policy
-    digest: 06953f6092ace5d66169cd3c6f625d9300408bf024192dd3ed920da130a1e717
+    digest: 95d4ff2f67da0e8ce093e694fd463f547682fb5c1fe8fc55173e64945eac43c2
     name: policy
     urls:
     - policy-8.0.0.tgz
     version: 8.0.0
   portal:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.679942911Z"
+    created: "2021-06-30T04:03:57.359207797Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1551,14 +1548,14 @@ entries:
       repository: file://components/portal-widget
       version: ~8.x-0
     description: ONAP Web Portal
-    digest: 9d32e8bb14a37f246d01b460c0f267c3ab818287c204dd9d173d918aee5d9d97
+    digest: 49ac132bf034d9efa8505a2081081fb7e488cf490ae25cb1d3af4fc0a26a4123
     name: portal
     urls:
     - portal-8.0.0.tgz
     version: 8.0.0
   portal-app:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.690305662Z"
+    created: "2021-06-30T04:03:57.368416241Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1570,14 +1567,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Portal application
-    digest: 823719923f5c5d921c05ab820d9150d63b9fc21204d7fba396a2763c692c653e
+    digest: e8f7df710fc99220bb1fbac562bd7ff8201b4ab68d2774884c74b9321a3d0a8e
     name: portal-app
     urls:
     - portal-app-8.0.0.tgz
     version: 8.0.0
   portal-cassandra:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.694062014Z"
+    created: "2021-06-30T04:03:57.372063164Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1586,14 +1583,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Portal cassandra
-    digest: 47d68d6967eb1d634aa6c0f47497b7b0ad6a7ee66160096fb994b8a9d63edb9d
+    digest: 4327be210b3f517b379b8960fbc2d7ef3c817041c3d33af1ef2448349be135ae
     name: portal-cassandra
     urls:
     - portal-cassandra-8.0.0.tgz
     version: 8.0.0
   portal-mariadb:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.69919649Z"
+    created: "2021-06-30T04:03:57.377095176Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1602,14 +1599,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: MariaDB Service
-    digest: 7a958de968c64ce49475752535660028cc025f8425e6cfcf5896ae608ac94633
+    digest: 23563d066b532a6d4cb2c789970a7022f2a5a971b179a96dbad0eb9dcd2e7c30
     name: portal-mariadb
     urls:
     - portal-mariadb-8.0.0.tgz
     version: 8.0.0
   portal-sdk:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.70950701Z"
+    created: "2021-06-30T04:03:57.385665206Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1621,14 +1618,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Portal software development kit
-    digest: 30c14163ccf15eb7cb06356bff2014adf11db0528cd9e6c240331dd0e86c84ae
+    digest: 54a3e7eba0a7602dd38d07666d3117bc662ec82f61fd21e83ba3442a72748eb8
     name: portal-sdk
     urls:
     - portal-sdk-8.0.0.tgz
     version: 8.0.0
   portal-widget:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.712973829Z"
+    created: "2021-06-30T04:03:57.38874177Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1637,14 +1634,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: Portal widgets micro service application
-    digest: 8d8b83d830b658562585edfcaf8450c64ebeba2a73f8a4828d01e4efa1d2fb07
+    digest: c9b8956e10040bd7ae95483b43c8673d8503bd14b61a6938baae91e82fa9f4be
     name: portal-widget
     urls:
     - portal-widget-8.0.0.tgz
     version: 8.0.0
   postgres:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.71777884Z"
+    created: "2021-06-30T04:03:57.396057103Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1653,14 +1650,14 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: ONAP Postgres Server
-    digest: 4ef95357e7675c3d60985c05d515face3c9767110a8ae6851b33a3ce610f7251
+    digest: b6d46603cc42c806b6723ad137be9ad708c6f52df711a6cc02156120baa4fb57
     name: postgres
     urls:
     - postgres-8.0.0.tgz
     version: 8.0.0
   readinessCheck:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.720284688Z"
+    created: "2021-06-30T04:03:57.400120018Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1669,14 +1666,14 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: Template used to wait for other deployment/sts/jobs in onap
-    digest: 17b52b87cca43d15a5c92408fc4399abf7e6805bc4ef329d92343c5a190e6746
+    digest: 505a9bf6fb2f0dca0598cb2073eca32f56b5dd431f88d4109bc65e812a936b15
     name: readinessCheck
     urls:
     - readinessCheck-8.0.0.tgz
     version: 8.0.0
   repository-wrapper:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.723027463Z"
+    created: "2021-06-30T04:03:57.404329435Z"
     dependencies:
     - name: common
       repository: file://../common
@@ -1685,23 +1682,23 @@ entries:
       repository: file://../repositoryGenerator
       version: ~8.x-0
     description: Wrapper chart to allow docker secret to be shared all instances
-    digest: 008f2f8442c3e8ec6b7d4f776fc7b21d155acb24cc4473a91ad9ba0e942d0154
+    digest: c94a72937423776e18135f62ab637fe8a2bfe7d7c84623f4f17a600f87ee26ed
     name: repository-wrapper
     urls:
     - repository-wrapper-8.0.0.tgz
     version: 8.0.0
   repositoryGenerator:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.723724076Z"
+    created: "2021-06-30T04:03:57.405541833Z"
     description: Template used to generate the right repository link
-    digest: 1c76ff3c6238780a187f211be1110a6b925e08c96f5ecdf80413c92fd7d5ca17
+    digest: 060835f9a5494530f362ef91a2ac4b8cebaa6c891a9156faca138ce136bf8540
     name: repositoryGenerator
     urls:
     - repositoryGenerator-8.0.0.tgz
     version: 8.0.0
   robot:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.730325606Z"
+    created: "2021-06-30T04:03:57.412669921Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1710,14 +1707,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: A helm Chart for kubernetes-ONAP Robot
-    digest: a2d9458f73b491bb690c18dac0ea73fa710490bb37827bb3f04dfc4a55654482
+    digest: eae15b615ece76b8663a220ad549b44781d030bc21cc82b6101c3fa9065afa1c
     name: robot
     urls:
     - robot-8.0.0.tgz
     version: 8.0.0
   sdc:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.772435108Z"
+    created: "2021-06-30T04:03:57.45558923Z"
     dependencies:
     - name: sdc-be
       repository: file://components/sdc-be
@@ -1740,14 +1737,14 @@ entries:
       repository: file://components/sdc-wfd-fe
       version: ~8.x-0
     description: Service Design and Creation Umbrella Helm charts
-    digest: 79c9e984af0610010e297a66d31afe3ab73a47d1350daca065698eb43bfdb9c8
+    digest: 42c51900192a4ac9bf126e0ad335f25716a97e69cbce02ad1f34526541f3b1e5
     name: sdc
     urls:
     - sdc-8.0.0.tgz
     version: 8.0.0
   sdc-be:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.784874662Z"
+    created: "2021-06-30T04:03:57.461988952Z"
     dependencies:
     - name: certInitializer
       repository: '@local'
@@ -1756,14 +1753,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Service Design and Creation Backend API
-    digest: 3d6a42bd3c655001ca90a4c6de5690996ebd121f04054b588678a0a0cc51e721
+    digest: c140fb872047d8d94786e897b637559d158ee7a8f40b16183af668066845b831
     name: sdc-be
     urls:
     - sdc-be-8.0.0.tgz
     version: 8.0.0
   sdc-cs:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.791331913Z"
+    created: "2021-06-30T04:03:57.46458722Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1772,14 +1769,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Service Design and Creation Cassandra
-    digest: f767784a1e223482d13fbb26e6fcbf0a67c6d6a68cdaf6f9ac146c1027a6512c
+    digest: 4401ee3ecd6c78ae8488826bd322326e4336a9f837e470c92a29c6353c339fb8
     name: sdc-cs
     urls:
     - sdc-cs-8.0.0.tgz
     version: 8.0.0
   sdc-fe:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.807802175Z"
+    created: "2021-06-30T04:03:57.474296777Z"
     dependencies:
     - name: certInitializer
       repository: '@local'
@@ -1788,14 +1785,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Service Design and Creation Front End
-    digest: 4f8c816065c048986da6a3a01a8bfa8af22994483a39e84c0fb91292892ffea4
+    digest: 62a2feb0971dbee3324d86ace2fd1a5029d4130ceabede850f6df1cbe23ca09f
     name: sdc-fe
     urls:
     - sdc-fe-8.0.0.tgz
     version: 8.0.0
   sdc-onboarding-be:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.818805485Z"
+    created: "2021-06-30T04:03:57.482114613Z"
     dependencies:
     - name: certInitializer
       repository: '@local'
@@ -1804,14 +1801,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Service Design and Creation Onboarding API
-    digest: bee11696af55934ccf2db0f780fc1bef4b886b97b99966dda2156c2747ca26cb
+    digest: c68a19ed0f9b54aca5520a45d42f8d0387bb68d16e93e551afebd68932ba98ac
     name: sdc-onboarding-be
     urls:
     - sdc-onboarding-be-8.0.0.tgz
     version: 8.0.0
   sdc-wfd-be:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.828593289Z"
+    created: "2021-06-30T04:03:57.490541041Z"
     dependencies:
     - name: certInitializer
       repository: '@local'
@@ -1820,14 +1817,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Service Design and Creation Workflow Designer backend
-    digest: ff5746ca2e3141cf8131594d937a5c58ac85d8bfd1b6b59d98c0b6eaaffd95b7
+    digest: cc813ca7c48b5fa32e96b2d9db703d89dcdbd0ba62860aabebc0d846a21149fe
     name: sdc-wfd-be
     urls:
     - sdc-wfd-be-8.0.0.tgz
     version: 8.0.0
   sdc-wfd-fe:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.838263936Z"
+    created: "2021-06-30T04:03:57.498901179Z"
     dependencies:
     - name: certInitializer
       repository: '@local'
@@ -1836,14 +1833,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Service Design and Creation Workflow Designer frontend
-    digest: 8cb814763e16f385614decded4e0b50d2c65f9d1dcc93b2687fb6982df0c4a2d
+    digest: 3248e154c495b0e79377b1eb441c72a7a46c6b8820e896c11275fe0b5e84aeba
     name: sdc-wfd-fe
     urls:
     - sdc-wfd-fe-8.0.0.tgz
     version: 8.0.0
   sdnc:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.966977569Z"
+    created: "2021-06-30T04:03:57.601848119Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1900,14 +1897,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: SDN Controller
-    digest: cd97a6abf80afe5a9baa99510665ae4e6e73582701ce747e8781464955d4c523
+    digest: 995d4da1988ef16056538e37f3dabcd215ac07cab14e44ea7fa06acb3cb100ae
     name: sdnc
     urls:
     - sdnc-8.0.0.tgz
     version: 8.0.0
   sdnc-ansible-server:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.970670678Z"
+    created: "2021-06-30T04:03:57.605072372Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1916,14 +1913,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: SDN-C Ansible Server
-    digest: 7c582ab1cf2f18563e66b6faa11f7ac168c00c0d2b101f8acf9d15a4e38aa321
+    digest: 745c8569b286c2951bf3486188d820208f235e2ccf6d98ddb94b1ebe5d90129a
     name: sdnc-ansible-server
     urls:
     - sdnc-ansible-server-8.0.0.tgz
     version: 8.0.0
   sdnc-prom:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.974265247Z"
+    created: "2021-06-30T04:03:57.607926956Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1932,14 +1929,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP SDNC Policy Driven Ownership Management
-    digest: 4cb6e0c2cce362fbe991b0fcd3b811076264039a3adf5c1018fb88d470eec2d1
+    digest: c93ce8649a7027e3ad8fef43fa01ae23c45a40655d381c5b9a40455d09bdb410
     name: sdnc-prom
     urls:
     - sdnc-prom-8.0.0.tgz
     version: 8.0.0
   sdnc-web:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.983093665Z"
+    created: "2021-06-30T04:03:57.616230974Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1951,27 +1948,27 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: SDN-C Web Server
-    digest: 81c59361044e935caffb1470201a5903dce5fe66483ca721f6f77cf6ad390ee1
+    digest: 27b387bfb1c62663c4c1a11d35a4ec026389e38294d55a225754bdc867adad93
     name: sdnc-web
     urls:
     - sdnc-web-8.0.0.tgz
     version: 8.0.0
   serviceAccount:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.985133961Z"
+    created: "2021-06-30T04:03:57.618280537Z"
     dependencies:
     - name: common
       repository: file://../common
       version: ~8.x-0
     description: Template used to create the right Service Accounts / Role / RoleBinding
-    digest: f5ea47054198259d67c0d7834aacc4726da5f91e99b64783a02336ff029a1122
+    digest: 9e3500b39a4c12317523477c6c6d8092d8f063ff16d2dbd1b48976ab483139f7
     name: serviceAccount
     urls:
     - serviceAccount-8.0.0.tgz
     version: 8.0.0
   sniro-emulator:
   - apiVersion: v1
-    created: "2021-06-22T15:44:06.988736452Z"
+    created: "2021-06-30T04:03:57.62102237Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -1980,14 +1977,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Mock Sniro Emulator
-    digest: af48cce9ddc1a38a661b480f8dd7bdeb3b64bc75211b4ca1f1cdc54835bee030
+    digest: ccfda0174a71c301df0e4d87bafcdedb4706022578639525119fa39ff9d0d6e4
     name: sniro-emulator
     urls:
     - sniro-emulator-8.0.0.tgz
     version: 8.0.0
   so:
   - apiVersion: v1
-    created: "2021-06-22T15:44:07.241218726Z"
+    created: "2021-06-30T04:03:57.862628825Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -2066,14 +2063,14 @@ entries:
       repository: file://components/so-etsi-sol005-adapter
       version: ~8.x-0
     description: ONAP Service Orchestrator
-    digest: 1bf9f57f05579054ec3d74854e33fe529f0f753cf3e801286f690cf70f263749
+    digest: 039f8f955fd9699bb1a67b6e6be7bba009bd35ce594125a1b22e8a81ad505a61
     name: so
     urls:
     - so-8.0.0.tgz
     version: 8.0.0
   ueb-listener:
   - apiVersion: v1
-    created: "2021-06-22T15:44:07.244500516Z"
+    created: "2021-06-30T04:03:57.865945753Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -2082,14 +2079,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: SDNC UEB Listener
-    digest: 60513e81de37a5619233fe239184163cb0f6c87767f7eee1ae950683ab065ba6
+    digest: 646b5f5174083770320f96955454fecbe5a519b5a55a59100b3784d4776f308f
     name: ueb-listener
     urls:
     - ueb-listener-8.0.0.tgz
     version: 8.0.0
   uui:
   - apiVersion: v1
-    created: "2021-06-22T15:44:07.248157946Z"
+    created: "2021-06-30T04:03:57.86961724Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -2101,14 +2098,14 @@ entries:
       repository: file://components/uui-server
       version: ~8.x-0
     description: ONAP uui
-    digest: 64bfe40bd5de6cc57af5a2b5409531e01104348994e0b07a22225bb241b1dbf6
+    digest: 85359df55b94c87ba3c3a438634219f83f0d10a1fb01cfa8ad0709dd5500eee3
     name: uui
     urls:
     - uui-8.0.0.tgz
     version: 8.0.0
   vfc:
   - apiVersion: v1
-    created: "2021-06-22T15:44:07.293105923Z"
+    created: "2021-06-30T04:03:57.912901419Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -2152,14 +2149,14 @@ entries:
       repository: file://components/vfc-zte-vnfm-driver
       version: ~8.x-0
     description: ONAP Virtual Function Controller (VF-C)
-    digest: 4bc53a29038a6584bfba9e5a539ad2aee5dc295fe622f6ffd95323af85918018
+    digest: 72df73a7e9c16b033207df048d30ff5be9faf6468de50d724dd5cb6a72f2b415
     name: vfc
     urls:
     - vfc-8.0.0.tgz
     version: 8.0.0
   vid:
   - apiVersion: v1
-    created: "2021-06-22T15:44:07.327020021Z"
+    created: "2021-06-30T04:03:57.935181259Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -2179,14 +2176,14 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP Virtual Infrastructure Deployment
-    digest: 456c98633d864fcc0e72cd31fa6950aae4ba9971f95b6e5ddd4ad870f8f4ed62
+    digest: 68ce76d0d6ffe948b8517221ecd24059523048f0b9945740c76f68e4fb8cab1c
     name: vid
     urls:
     - vid-8.0.0.tgz
     version: 8.0.0
   vnfsdk:
   - apiVersion: v1
-    created: "2021-06-22T15:44:07.346180576Z"
+    created: "2021-06-30T04:03:57.950387842Z"
     dependencies:
     - name: common
       repository: '@local'
@@ -2201,9 +2198,9 @@ entries:
       repository: '@local'
       version: ~8.x-0
     description: ONAP VNF SDK
-    digest: b38510b69faa640ec5865374156926a562875579ecfc007b82cf1c0aa42e26b5
+    digest: dad684a013c799ebae11fd0b732af61d57e23f6121d10d489fbe2c4c4156e207
     name: vnfsdk
     urls:
     - vnfsdk-8.0.0.tgz
     version: 8.0.0
-generated: "2021-06-22T15:44:03.539776421Z"
+generated: "2021-06-30T04:03:54.714124657Z"
