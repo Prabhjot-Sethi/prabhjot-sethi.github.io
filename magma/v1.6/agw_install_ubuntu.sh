@@ -83,7 +83,7 @@ if [[ $1 != "$CLOUD_INSTALL" ]] && ( [[ ! $INTERFACES == *'eth0'*  ]] || [[ ! $I
   systemctl unmask networking
   systemctl enable networking
 
-  apt-get --assume-yes purge nplan netplan.i
+  # apt-get --assume-yes purge nplan netplan.i
 
   # Setting REBOOT flag to 1 because we need to reload new interface and network services.
   NEED_REBOOT=1
