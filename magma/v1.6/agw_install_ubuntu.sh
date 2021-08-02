@@ -65,7 +65,7 @@ INTERFACES=$(ip -br a)
 if [[ $1 != "$CLOUD_INSTALL" ]] && ( [[ ! $INTERFACES == *'eth0'*  ]] || [[ ! $INTERFACES == *'eth1'* ]] || ! grep -q 'GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"' /etc/default/grub); then
   # changing intefaces name
   sed -i 's/virtlet-eth0/eth0/g' /etc/netplan/50-cloud-init.yaml
-  sed -i 's/net0/net1/g' /etc/netplan/50-cloud-init.yaml
+  sed -i 's/net0/eth1/g' /etc/netplan/50-cloud-init.yaml
   netplan apply
   apt install -y ifupdown net-tools ipcalc
 else
