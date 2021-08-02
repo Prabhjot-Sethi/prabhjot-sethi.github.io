@@ -27,6 +27,7 @@ WHOAMI=$(whoami)
 MAGMA_VERSION="${MAGMA_VERSION:-v1.6}"
 CLOUD_INSTALL="cloud"
 GIT_URL="${GIT_URL:-https://github.com/magma/magma.git}"
+INTERFACE_DIR="/etc/network/interfaces.d"
 
 echo "Checking if the script has been executed by root user"
 if [ "$WHOAMI" != "root" ]; then
@@ -63,30 +64,10 @@ echo "Need to check if both interfaces are named eth0 and eth1"
 INTERFACES=$(ip -br a)
 if [[ $1 != "$CLOUD_INSTALL" ]] && ( [[ ! $INTERFACES == *'eth0'*  ]] || [[ ! $INTERFACES == *'eth1'* ]] || ! grep -q 'GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"' /etc/default/grub); then
   # changing intefaces name
-  sed -i 's/GRUB_CMDLINE_LINUX=""/GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"/g' /etc/default/grub
   sed -i 's/virtlet-eth0/eth0/g' /etc/netplan/50-cloud-init.yaml
-  sed -i 's/net0/eth1/g' /etc/netplan/50-cloud-init.yaml
-  sed -i 's/virtlet-eth0/eth0/g' /etc/network/interfaces.d/50-cloud-init.cfg
-  sed -i 's/net0/eth1/g' /etc/network/interfaces.d/50-cloud-init.cfg
-  # changing interface name
-  grub-mkconfig -o /boot/grub/grub.cfg
-
-  # name server config
-  # ln -sf /var/run/systemd/resolve/resolv.conf /etc/resolv.conf
-  # sed -i 's/#DNS=/DNS=8.8.8.8 208.67.222.222/' /etc/systemd/resolved.conf
-  # service systemd-resolved restart
-
-  # interface config
-  apt install -y ifupdown net-tools
-
-  # get rid of netplan
-  systemctl unmask networking
-  systemctl enable networking
-
-  # apt-get --assume-yes purge nplan netplan.i
-
-  # Setting REBOOT flag to 1 because we need to reload new interface and network services.
-  NEED_REBOOT=1
+  sed -i 's/net0/net1/g' /etc/netplan/50-cloud-init.yaml
+  netplan apply
+  apt install -y ifupdown net-tools ipcalc
 else
   echo "Interfaces name are correct, let's check if network and DNS are up"
   while ! nslookup google.com; do
