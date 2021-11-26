@@ -1,0 +1,412 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Cloud Compass API configuration",
+    "version": "1.0"
+  },
+  "tags": [
+    {
+      "name": "ClusterApi"
+    },
+    {
+      "name": "ApiConfig"
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/domain/{domain}/project/{project}/cluster/{cluster}": {
+      "get": {
+        "summary": "Get Cluster",
+        "operationId": "ClusterApi_GetCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      },
+      "delete": {
+        "summary": "Delete Cluster",
+        "operationId": "ClusterApi_DeleteCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configEmpty"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/project/{project}/clusters": {
+      "get": {
+        "summary": "List Clusters",
+        "operationId": "ClusterApi_ListClusters",
+        "responses": {
+          "200": {
+            "description": "A successful response.(streaming responses)",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "$ref": "#/definitions/configCluster"
+                },
+                "error": {
+                  "$ref": "#/definitions/rpcStatus"
+                }
+              },
+              "title": "Stream result of configCluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{key.domain}/project/{key.project}/cluster": {
+      "post": {
+        "summary": "Create Cluster",
+        "operationId": "ClusterApi_CreateCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "key.domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "key.project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{key.domain}/project/{key.project}/cluster/{key.cluster}": {
+      "put": {
+        "summary": "Update Cluster",
+        "operationId": "ClusterApi_UpdateCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "key.domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "key.project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "key.cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/project": {
+      "post": {
+        "summary": "Create Project",
+        "operationId": "ApiConfig_CreateProject",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configProject"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/configProject"
+            }
+          }
+        ],
+        "tags": [
+          "ApiConfig"
+        ]
+      }
+    },
+    "/v1/project/{name}": {
+      "get": {
+        "summary": "Get Project",
+        "operationId": "ApiConfig_GetProject",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configProject"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name of the project, empty name is invalid\nneeds to be unique",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ApiConfig"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "configCluster": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "$ref": "#/definitions/configClusterKey",
+          "title": "key to identify cluster"
+        },
+        "desc": {
+          "type": "string",
+          "title": "desc cluster description"
+        },
+        "identifier": {
+          "type": "string",
+          "title": "cluster identifier generated by compass agent"
+        },
+        "authKey": {
+          "type": "string",
+          "title": "auth_key generated by compass agent"
+        }
+      }
+    },
+    "configClusterKey": {
+      "type": "object",
+      "properties": {
+        "domain": {
+          "type": "string",
+          "title": "domain name to which this cluster belongs"
+        },
+        "project": {
+          "type": "string",
+          "title": "project name to which this cluster belongs"
+        },
+        "cluster": {
+          "type": "string",
+          "title": "cluster name to which this cluster belongs"
+        }
+      },
+      "title": "ClusterKey key for identification of cluster"
+    },
+    "configEmpty": {
+      "type": "object",
+      "description": "service Foo {\n      rpc Bar(Empty) returns (Empty);\n    }\n\nThe JSON representation for `Empty` is empty JSON object `{}`.",
+      "title": "A generic empty message that you can re-use to avoid defining duplicated\nempty messages in your APIs. A typical example is to use it as the request\nor the response type of an API method. For instance:"
+    },
+    "configProject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name of the project, empty name is invalid\nneeds to be unique"
+        }
+      }
+    },
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {}
+    },
+    "rpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Cloud Compass API for distributed cluster management"
+  }
+}
