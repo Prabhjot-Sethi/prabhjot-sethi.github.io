@@ -407,6 +407,7 @@
     }
   },
   "externalDocs": {
-    "description": "Cloud Compass API for distributed cluster management"
+    "description": "Cloud Compass API for distributed cluster management",
+    "url": "https://prabhjot-sethi.github.io/json/config.swagger.json"
   }
 }
