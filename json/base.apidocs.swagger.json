@@ -1,0 +1,993 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Cloud Compass API configuration",
+    "version": "1.0"
+  },
+  "tags": [
+    {
+      "name": "Helm"
+    },
+    {
+      "name": "AccessControl"
+    },
+    {
+      "name": "CapabilityInfo"
+    },
+    {
+      "name": "ClusterApi"
+    },
+    {
+      "name": "ApiConfig"
+    }
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/v1/capabilityset": {
+      "get": {
+        "summary": "get capability set supported by api",
+        "operationId": "CapabilityInfo_GetCapabilitySet",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configCapabilitySet"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "CapabilityInfo"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/project/{project}/cluster": {
+      "post": {
+        "summary": "Create Cluster",
+        "operationId": "ClusterApi_CreateCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "cluster": {
+                  "type": "string",
+                  "title": "cluster name to which this cluster belongs"
+                },
+                "desc": {
+                  "type": "string",
+                  "title": "desc cluster description"
+                },
+                "distribution": {
+                  "type": "string",
+                  "title": "Distribution cluster is using"
+                },
+                "clusterType": {
+                  "type": "string",
+                  "title": "cluster type"
+                },
+                "registry": {
+                  "type": "string",
+                  "title": "registry used for cluster"
+                }
+              }
+            }
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/project/{project}/cluster/{cluster}": {
+      "get": {
+        "summary": "Get Cluster",
+        "operationId": "ClusterApi_GetCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      },
+      "delete": {
+        "summary": "Delete Cluster",
+        "operationId": "ClusterApi_DeleteCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configEmpty"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      },
+      "put": {
+        "summary": "Update Cluster",
+        "operationId": "ClusterApi_UpdateCluster",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configCluster"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "desc": {
+                  "type": "string",
+                  "title": "desc cluster description"
+                },
+                "distribution": {
+                  "type": "string",
+                  "title": "Distribution cluster is using"
+                },
+                "clusterType": {
+                  "type": "string",
+                  "title": "cluster type"
+                },
+                "registry": {
+                  "type": "string",
+                  "title": "registry used for cluster"
+                }
+              }
+            }
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/project/{project}/cluster/{cluster}/config": {
+      "get": {
+        "summary": "Get Cluster Config",
+        "operationId": "ClusterApi_GetClusterConfig",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configClusterConfig"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/project/{project}/cluster/{cluster}/status": {
+      "get": {
+        "summary": "Get Cluster Status",
+        "operationId": "ClusterApi_GetClusterStatus",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configClusterStatus"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cluster",
+            "description": "cluster name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/project/{project}/clusters": {
+      "get": {
+        "summary": "List Clusters",
+        "operationId": "ClusterApi_ListClusters",
+        "responses": {
+          "200": {
+            "description": "A successful response.(streaming responses)",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "result": {
+                  "$ref": "#/definitions/configClusterStatus"
+                },
+                "error": {
+                  "$ref": "#/definitions/rpcStatus"
+                }
+              },
+              "title": "Stream result of configClusterStatus"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "project",
+            "description": "project name to which this cluster belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ClusterApi"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/projects": {
+      "get": {
+        "summary": "get list of projects available in given domain",
+        "operationId": "AccessControl_ListProjects",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configProjects"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain for which project list is requested",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "AccessControl"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/repo": {
+      "post": {
+        "summary": "Add Helm Repo",
+        "operationId": "Helm_RepoAdd",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configRepo"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain to which this repo belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "repoName": {
+                  "type": "string",
+                  "title": "name of the helm repo, what will be used as identifier\nfor helm repo reference"
+                },
+                "url": {
+                  "type": "string",
+                  "title": "url where the helm repo is hosted"
+                },
+                "skipTlsVerify": {
+                  "type": "boolean",
+                  "title": "Skip TLS verify, required to accomdated usage of self-signed certificates"
+                },
+                "allowDeprecated": {
+                  "type": "boolean",
+                  "title": "Allow deprecated helm charts"
+                }
+              }
+            }
+          }
+        ],
+        "tags": [
+          "Helm"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/repo/{repoName}": {
+      "get": {
+        "summary": "Get of Helm Repo",
+        "operationId": "Helm_RepoGet",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configRepoDetail"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain to which this repo belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "repoName",
+            "description": "name of the helm repo, what will be used as identifier\nfor helm repo reference",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Helm"
+        ]
+      },
+      "delete": {
+        "summary": "Remove Helm Repo",
+        "operationId": "Helm_RepoRemove",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configEmpty"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain to which this repo belongs",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "repoName",
+            "description": "name of the helm repo, what will be used as identifier\nfor helm repo reference",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Helm"
+        ]
+      }
+    },
+    "/v1/domain/{domain}/repos": {
+      "get": {
+        "summary": "Get List of Helm Repos",
+        "operationId": "Helm_GetRepoList",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configRepoList"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "domain",
+            "description": "domain in which the repo list is requested",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "Helm"
+        ]
+      }
+    },
+    "/v1/domains": {
+      "get": {
+        "summary": "get list of available domains",
+        "operationId": "AccessControl_ListDomains",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configDomains"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "tags": [
+          "AccessControl"
+        ]
+      }
+    },
+    "/v1/project": {
+      "post": {
+        "summary": "Create Project",
+        "operationId": "ApiConfig_CreateProject",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configProject"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/configProject"
+            }
+          }
+        ],
+        "tags": [
+          "ApiConfig"
+        ]
+      }
+    },
+    "/v1/project/{name}": {
+      "get": {
+        "summary": "Get Project",
+        "operationId": "ApiConfig_GetProject",
+        "responses": {
+          "200": {
+            "description": "A successful response.",
+            "schema": {
+              "$ref": "#/definitions/configProject"
+            }
+          },
+          "default": {
+            "description": "An unexpected error response.",
+            "schema": {
+              "$ref": "#/definitions/rpcStatus"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "description": "Name of the project, empty name is invalid\nneeds to be unique",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "tags": [
+          "ApiConfig"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "configCapabilitySet": {
+      "type": "object",
+      "properties": {
+        "orchestrationEnabled": {
+          "type": "boolean",
+          "title": "indicates if orchestration is enabled"
+        },
+        "supportedDistributions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "supported distributions"
+        },
+        "supportedClusterTypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "supported cluster types"
+        }
+      }
+    },
+    "configCluster": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "$ref": "#/definitions/configClusterKey",
+          "title": "key to identify cluster"
+        },
+        "desc": {
+          "type": "string",
+          "title": "desc cluster description"
+        },
+        "identifier": {
+          "type": "string",
+          "title": "cluster identifier generated by compass agent"
+        },
+        "config": {
+          "type": "string",
+          "title": "config info to be used by cluster agent"
+        },
+        "distribution": {
+          "type": "string",
+          "title": "Distribution cluster is using"
+        },
+        "clusterType": {
+          "type": "string",
+          "title": "cluster type"
+        },
+        "registry": {
+          "type": "string",
+          "title": "registry used for cluster"
+        }
+      }
+    },
+    "configClusterConfig": {
+      "type": "object",
+      "properties": {
+        "config": {
+          "type": "string",
+          "title": "cluster config that needs to be used at agent"
+        }
+      }
+    },
+    "configClusterKey": {
+      "type": "object",
+      "properties": {
+        "domain": {
+          "type": "string",
+          "title": "domain name to which this cluster belongs"
+        },
+        "project": {
+          "type": "string",
+          "title": "project name to which this cluster belongs"
+        },
+        "cluster": {
+          "type": "string",
+          "title": "cluster name to which this cluster belongs"
+        }
+      },
+      "title": "ClusterKey key for identification of cluster"
+    },
+    "configClusterStatus": {
+      "type": "object",
+      "properties": {
+        "cluster": {
+          "$ref": "#/definitions/configCluster",
+          "title": "cluster details"
+        },
+        "state": {
+          "type": "string",
+          "title": "cluster state"
+        }
+      }
+    },
+    "configDomains": {
+      "type": "object",
+      "properties": {
+        "defaultDomain": {
+          "type": "string",
+          "title": "defaultDomain default domain to be used"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "list of domains available"
+        }
+      }
+    },
+    "configEmpty": {
+      "type": "object",
+      "description": "service Foo {\n      rpc Bar(Empty) returns (Empty);\n    }\n\nThe JSON representation for `Empty` is empty JSON object `{}`.",
+      "title": "A generic empty message that you can re-use to avoid defining duplicated\nempty messages in your APIs. A typical example is to use it as the request\nor the response type of an API method. For instance:"
+    },
+    "configProject": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name of the project, empty name is invalid\nneeds to be unique"
+        }
+      }
+    },
+    "configProjects": {
+      "type": "object",
+      "properties": {
+        "defaultProject": {
+          "type": "string",
+          "title": "defaultProject default project to be used"
+        },
+        "list": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "list of projects available"
+        }
+      }
+    },
+    "configRepo": {
+      "type": "object",
+      "properties": {
+        "repoName": {
+          "type": "string",
+          "title": "name of the helm repo, what will be used as identifier\nfor helm repo reference"
+        },
+        "url": {
+          "type": "string",
+          "title": "url where the helm repo is hosted"
+        },
+        "skipTlsVerify": {
+          "type": "boolean",
+          "title": "Skip TLS verify, required to accomdated usage of self-signed certificates"
+        },
+        "allowDeprecated": {
+          "type": "boolean",
+          "title": "Allow deprecated helm charts"
+        }
+      }
+    },
+    "configRepoChart": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "name of the chart in repo"
+        },
+        "versions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/configRepoChartVersions"
+          },
+          "title": "available chart versions"
+        }
+      }
+    },
+    "configRepoChartVersions": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "title": "version of the helm chart"
+        },
+        "appVersion": {
+          "type": "string",
+          "title": "version of the packaged application"
+        },
+        "description": {
+          "type": "string",
+          "title": "description of chart"
+        },
+        "deprecated": {
+          "type": "boolean",
+          "title": "if the chart is deprecated"
+        },
+        "urls": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "urls for helm chart bundle"
+        }
+      }
+    },
+    "configRepoDetail": {
+      "type": "object",
+      "properties": {
+        "repoName": {
+          "type": "string",
+          "title": "name of the helm repo, what will be used as identifier\nfor helm repo reference"
+        },
+        "url": {
+          "type": "string",
+          "title": "url where the helm repo is hosted"
+        },
+        "skipTlsVerify": {
+          "type": "boolean",
+          "title": "Skip TLS verify, required to accomdated usage of self-signed certificates"
+        },
+        "allowDeprecated": {
+          "type": "boolean",
+          "title": "Allow deprecated helm charts"
+        },
+        "charts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/configRepoChart"
+          },
+          "title": "charts in this repo"
+        }
+      }
+    },
+    "configRepoList": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "integer",
+          "format": "int32",
+          "title": "number of repos in the list"
+        },
+        "repos": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/configRepo"
+          }
+        }
+      }
+    },
+    "protobufAny": {
+      "type": "object",
+      "properties": {
+        "@type": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": {}
+    },
+    "rpcStatus": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/protobufAny"
+          }
+        }
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "Cloud Compass API for distributed cluster management"
+  }
+}
